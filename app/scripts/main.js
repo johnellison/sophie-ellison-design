@@ -1,4 +1,2 @@
 /* jshint devel:true */
-"use strict";
-
-
+'use strict';
