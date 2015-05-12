@@ -1,0 +1,13 @@
+{
+  "name": "sophie-ellison-com",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "handlebars": "^3.0.0"
+  },
+  "overrides": {
+    "handlebars": {
+      "main": "handlebars.runtime.js"
+    }
+  }
+}
