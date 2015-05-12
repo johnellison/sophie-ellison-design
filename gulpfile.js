@@ -9,7 +9,9 @@ var reload = browserSync.reload;
 gulp.task('templates', function () {
   return gulp.src('app/templates/**/*.hbs')
     .pipe($.handlebars())
-    .pipe($.defineModule('plain'))
+    .pipe($.defineModule('plain'), {
+      wrapper: 'Handlebars.template(<%= contents %>)'
+    })
     .pipe($.declare({
       namespace: 'MyApp.templates'
     }))

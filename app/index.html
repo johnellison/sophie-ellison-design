@@ -25,7 +25,7 @@
 
     </header>
     
-    <h1>Sustainable Lifestyle Design</h1>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -40,18 +40,21 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/handlebars/handlebars.runtime.js"></script>
+    <script src="/bower_components/handlebars/handlebars.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="templates/header.js" type="text/x-handlebars-template"></script>
     <script src="scripts/main.js"></script>
+    <script src="templates/header.js">
+    </script>
     <!-- endbuild -->    
 
     <script>
-      var html = MyApp.templates.header();
-      console.log(html);
+      var data = {title: "Sustainable Lifestyle Design"};
+      var html = MyApp.templates.header(data);
+
+      $('#site-header').html(html);
     </script>
 </body>
 </html>
