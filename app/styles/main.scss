@@ -47,10 +47,10 @@
 // @import 'foundation/components/tabs';
 // @import 'foundation/components/thumbs';
 // @import 'foundation/components/tooltips';
-// @import 'foundation/components/top-bar';
+@import 'foundation/components/top-bar';
 // @import 'foundation/components/type';
 // @import 'foundation/components/offcanvas';
-// @import 'foundation/components/visibility';
+@import 'foundation/components/visibility';
 
 // 01-base
 // @import '01-base/config';
@@ -59,8 +59,7 @@
 
 // 02-layout
 // @import '02-layout/l-index';
-@import '02-layout/l-layout',
-        '02-layout/l-header';
+@import '02-layout/l-layout';
 
 // 03-modules
 

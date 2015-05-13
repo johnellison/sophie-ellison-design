@@ -1,13 +1,17 @@
 header.l-site-header
-  nav.l-site-nav
-    ul.l-aleph-menu
-      li: a(href='/') Home
+  nav.top-bar(data-topbar='', role='navigation')
+    ul.title-area
+      li.name
+        h1
+          a(href='/') Logo
+      li.toggle-topbar.menu-icon
+        a(href='#')
+          span Menu
 
-    ul.l-beyt-menu
-      li.first: a(href='/projects.html') Projects
-      li: a(href='/about.html') About 
-        //- ul
-          li: a(href='/who-i-am.html') Who I Am
-          li: a(href='/what-i-do.html') What I Do
-      li: a(href='/contact.html') Contact
-      li: a(href='/inspiration.html') Inspiration
+    section.top-bar-section
+      ul.right
+        li: a(href="/") Home
+        li: a(href='/projects.html') Projects
+        li: a(href='/who-i-am.html') Who I Am
+        li: a(href='/what-i-do.html') What I Do
+        li: a(href='/contact.html') Contact
