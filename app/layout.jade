@@ -29,7 +29,9 @@ html(lang='')
 
     include views/includes/header
 
-    block content
+    div(role='main').l-main-wrapper
+      section.l-main-content
+        block content
 
     include views/includes/footer
 
