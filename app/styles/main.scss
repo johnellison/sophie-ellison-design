@@ -14,7 +14,6 @@
 @import 'typeplate';
 
 // Foundation Components
-@import 'foundation/components/grid';
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
 // @import 'foundation/components/block-grid';
@@ -26,6 +25,8 @@
 // @import 'foundation/components/dropdown-buttons';
 // @import 'foundation/components/flex-video';
 // @import 'foundation/components/forms';
+@import 'foundation/components/grid';
+@import 'foundation/components/global';
 // @import 'foundation/components/icon-bar';
 // @import 'foundation/components/inline-lists';
 // @import 'foundation/components/joyride';
@@ -53,13 +54,16 @@
 @import 'foundation/components/visibility';
 
 // 01-base
-@import '01-base/config';
+@import '01-base/config',
+        '01-base/type';
 // @import '01-base-debug'
 
 
 // 02-layout
 // @import '02-layout/l-index';
-@import '02-layout/l-layout';
+@import '02-layout/l-layout',
+        '02-layout/l-about',
+        '02-layout/l-what-i-do';
 
 // 03-modules
 
