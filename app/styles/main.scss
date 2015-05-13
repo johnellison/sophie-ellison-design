@@ -59,7 +59,8 @@
 
 // 02-layout
 // @import '02-layout/l-index';
-@import '02-layout/l-header';
+@import '02-layout/l-layout',
+        '02-layout/l-header';
 
 // 03-modules
 

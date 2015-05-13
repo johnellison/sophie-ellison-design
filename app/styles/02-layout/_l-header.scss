@@ -1,26 +1,57 @@
-.l-main-header {
+$site-header-breakpoint: em-calc(572);
+$site-header-bg-color: $white;
+
+.l-site-header {
   width: 100%;
   height: 4rem;
-  background-color: $white;
+  background-color: $site-header-bg-color;
   border-bottom: 1px solid $body-font-color;
-  .l-main-nav {
-    ul {
-      margin: 0;
-    }
-    .l-menu-left {
-      float: left;
-    }
-    .l-menu-right {
-      float: right;
+  // @media #{$m}
+  .l-site-nav {
+    ul.l-aleph-menu, ul.l-beyt-menu {
+      padding: 0;
+      margin: 0 auto;
+      list-style-type: none;
+      text-align: center;
       li {
-        margin-right: 1.25rem;
+        padding: 1.25rem 0;
+        display: inline-block;
+        a {
+          text-decoration: none;
+          color: $body-font-color;
+          font-weight: 700;
+        }
       }
     }
-    li {
-      padding: 1.25rem 0;
-      display: inline-block;
+    .l-aleph-menu {
+      // breakpoint and above:
+      // float: left;
+    }
+    .l-beyt-menu {
+      // Mobile menu appearing on bottom
+      width: 100%;
+      height: 4rem;
+      background-color: $site-header-bg-color;
+      position: fixed;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      bottom: 0;
+      border-top: 1px solid $body-font-color;
+      // breakpoint and above:
+      // float: right;
+      li {
+        display: inline-block;
+        margin-right: 5%;
+        // breakpoint and above
+        // margin-right: 1.25rem;
+        &.first {
+          margin-left: 5%;
+        }
+      }
+
     }
 
   }
-
+  
 }
