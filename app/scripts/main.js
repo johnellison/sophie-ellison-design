@@ -1,2 +1,10 @@
 /* jshint devel:true */
-'use strict';
+
+(function() {
+  'use strict';
+
+  (function($){
+    $(document).foundation();
+  }(jQuery));
+
+}());
