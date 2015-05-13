@@ -18,7 +18,11 @@ gulp.task('styles', function () {
     .pipe($.sass({
       outputStyle: 'nested', // libsass doesn't support expanded yet
       precision: 10,
-      includePaths: ['.'],
+      includePaths: [
+        '.',
+        'bower_components/foundation/scss',
+        'bower_components/typeplate-starter-kit/scss'
+      ],
       onError: console.error.bind(console, 'Sass error:')
     }))
     .pipe($.postcss([
@@ -62,13 +66,13 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
-});
+// gulp.task('fonts', function () {
+//   return gulp.src(require('main-bower-files')({
+//     filter: '**/*.{eot,svg,ttf,woff,woff2}'
+//   }).concat('app/fonts/**/*'))
+//     .pipe(gulp.dest('.tmp/fonts'))
+//     .pipe(gulp.dest('dist/fonts'));
+// });
 
 gulp.task('extras', function () {
   return gulp.src([
@@ -82,7 +86,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'views', 'fonts'], function () {
+gulp.task('serve', ['styles', 'views'], function () {
   browserSync({
     notify: false,
     port: 9000,
@@ -99,13 +103,12 @@ gulp.task('serve', ['styles', 'views', 'fonts'], function () {
     'app/*.html',
     '.tmp/*.html',
     'app/scripts/**/*.js',
-    'app/images/**/*',
-    '.tmp/fonts/**/*'
+    'app/images/**/*'
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
+  // gulp.watch('app/fonts/**/*', ['fonts']);
+  gulp.watch('bower.json', ['wiredep']);
   gulp.watch('app/**/*.jade', ['views']);
 });
 
@@ -119,14 +122,14 @@ gulp.task('wiredep', function () {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layouts/*.jade')
+  gulp.src('app/layout.jade')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

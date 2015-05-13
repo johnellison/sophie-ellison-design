@@ -1,31 +1,67 @@
 // bower:scss
 // endbower
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-}
+// Make sure the charset is set appropriately
+@charset "UTF-8";
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+// Foundation Settings
+@import 'settings';
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+// Normalize
+@import 'normalize';
+
+// Typeplate
+@import 'typeplate';
+
+// Foundation Components
+@import 'foundation/components/grid';
+@import 'foundation/components/accordion';
+@import 'foundation/components/alert-boxes';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/breadcrumbs';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
+@import 'foundation/components/clearing';
+@import 'foundation/components/dropdown';
+@import 'foundation/components/dropdown-buttons';
+@import 'foundation/components/flex-video';
+@import 'foundation/components/forms';
+@import 'foundation/components/icon-bar';
+@import 'foundation/components/inline-lists';
+@import 'foundation/components/joyride';
+@import 'foundation/components/keystrokes';
+@import 'foundation/components/labels';
+@import 'foundation/components/magellan';
+@import 'foundation/components/orbit';
+@import 'foundation/components/pagination';
+@import 'foundation/components/panels';
+@import 'foundation/components/pricing-tables';
+@import 'foundation/components/progress-bars';
+@import 'foundation/components/range-slider';
+@import 'foundation/components/reveal';
+@import 'foundation/components/side-nav';
+@import 'foundation/components/split-buttons';
+@import 'foundation/components/sub-nav';
+@import 'foundation/components/switches';
+@import 'foundation/components/tables';
+@import 'foundation/components/tabs';
+@import 'foundation/components/thumbs';
+@import 'foundation/components/tooltips';
+@import 'foundation/components/top-bar';
+// @import 'foundation/components/type';
+@import 'foundation/components/offcanvas';
+@import 'foundation/components/visibility';
+
+// 01-base
+// @import '01-base/config';
+// @import '01-base-debug'
+
+
+// 02-layout
+// @import '02-layout/l-index';
+
+// 03-modules
+
+// 04-states
+
+// 05-themes

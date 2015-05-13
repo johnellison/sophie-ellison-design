@@ -11,6 +11,7 @@ html(lang='')
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css
     // bower:css
+    //- link(rel='stylesheet', href='/bower_components/foundation/css/foundation.css')
     // endbower
     // endbuild
     // build:css styles/main.css
@@ -26,11 +27,11 @@ html(lang='')
         a(href='http://browsehappy.com/') upgrade your browser
         |  to improve your experience.
 
-    include ../views/includes/header
+    include views/includes/header
 
     block content
 
-    include ../views/includes/footer
+    include views/includes/footer
 
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
@@ -43,7 +44,12 @@ html(lang='')
       ga('create','UA-XXXXX-X');ga('send','pageview');
     // build:js scripts/vendor.js
     // bower:js
+    script(src='/bower_components/modernizr/modernizr.js')
     script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/fastclick/lib/fastclick.js')
+    script(src='/bower_components/jquery.cookie/jquery.cookie.js')
+    script(src='/bower_components/jquery-placeholder/jquery.placeholder.js')
+    script(src='/bower_components/foundation/js/foundation.js')
     // endbower
     // endbuild
     // build:js scripts/main.js
