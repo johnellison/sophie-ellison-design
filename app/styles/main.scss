@@ -10,9 +10,6 @@
 // Normalize
 @import 'normalize';
 
-// Typeplate
-@import 'typeplate';
-
 // Foundation Components
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
@@ -52,6 +49,10 @@
 // @import 'foundation/components/type';
 // @import 'foundation/components/offcanvas';
 @import 'foundation/components/visibility';
+
+
+// Typeplate
+@import 'typeplate';
 
 // 01-base
 @import '01-base/variables',
