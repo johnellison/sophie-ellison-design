@@ -1,0 +1,102 @@
+.l-home-header-wrapper {
+  height: 80%;
+  min-height: 450px;
+  width: 100%;
+  margin-top: -4rem;
+  display: table;
+  @media #{$small-only} {
+    @include grid-column(12);
+    height: 90%;
+  }
+}
+
+.l-home-header {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin-top: -4rem;
+  hyphens: none;
+  h1 {
+    @extend .typl8-beta;
+
+    @media #{$medium-up} {
+      @include typl8-typescale(
+        map-get($typl8-scale, typl8-alpha),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+        );
+    }
+
+    @media #{$large-up} {
+      @include typl8-typescale(
+        map-get($typl8-scale, typl8-mega),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+        );
+    }
+
+    @media #{$xlarge-up} {
+      @include typl8-typescale(
+        map-get($typl8-scale, typl8-giga),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+        );
+    }
+  }
+  .sub-title {
+    @extend .typl8-delta;
+    line-height: 1.2;
+    padding: 0 .5rem;
+
+    @media #{$medium-up} {
+      @include typl8-typescale(
+        map-get($typl8-scale, typl8-gamma),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+        );
+    }
+  }
+}
+
+// Play Button
+
+.play-button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  padding-top: 3.8rem;
+  @media #{$small-only} {
+    padding-top: 0rem;
+  }
+  .play {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid $typl8-heading-color;
+    transition: $global-transition;
+
+    span {
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 40px solid $typl8-heading-color;
+      margin-top: 20px;
+      margin-left: 15px;
+      display: inline-block;
+      transition: $global-transition;
+
+    }
+  }
+  &:hover {
+    .play {
+      border: 2px solid $primary-color;
+      span {
+        border-left: 40px solid $primary-color;
+      }
+    }
+  }
+}

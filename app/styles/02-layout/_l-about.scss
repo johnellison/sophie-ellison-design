@@ -1,4 +1,4 @@
-.l-about-content {
+.l-about-content, .l-what-i-do-content, .l-my-story-content {
   @include grid-column(12);
   @media #{$medium-up} {
     @include grid-column($columns: 8, $center: true);

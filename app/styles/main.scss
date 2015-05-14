@@ -54,16 +54,19 @@
 @import 'foundation/components/visibility';
 
 // 01-base
-@import '01-base/config',
-        '01-base/type';
+@import '01-base/variables',
+        '01-base/animations',
+        '01-base/overrides',
+        '01-base/mixins',
+        '01-base/typography';
+
 // @import '01-base-debug'
 
 
 // 02-layout
-// @import '02-layout/l-index';
 @import '02-layout/l-layout',
-        '02-layout/l-about',
-        '02-layout/l-what-i-do';
+        '02-layout/l-index',
+        '02-layout/l-about';
 
 // 03-modules
 
