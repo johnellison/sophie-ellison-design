@@ -19,6 +19,7 @@
     margin-bottom: 3.3rem;
     @media screen and (min-width: 712px) and (max-width: 955px) {
       text-align: left;
+      margin-bottom: 1.65rem;
       .m-process-icon-content {
         @include grid-column(3);
       }
@@ -61,16 +62,26 @@
     @include grid-column(12);
   }
   .m-process-icon {
-    background-color: $secondary-color;
+    background-color: $white;
     background-size: 8rem 8rem;
     border-radius: 50%;
     width: 8rem;
     height: 8rem;
     margin: 0 auto 1.65rem auto;
     // position: relative;
-    // medium-up
-      // margin-bottom: 10rem;
-    z-index:2;
+    @media screen and (min-width: 956px ) {
+      border: 2px solid $secondary-color;
+      img {
+        width: 6.5rem;
+        height: 6.5rem;
+        padding: 1rem;
+      }
+    }
+    z-index: 2;
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
   }
   .line {
     display: none;
@@ -82,7 +93,7 @@
       position: absolute;
       top: 8rem;
       left: 50%;
-      z-index: 0;
+      z-index: -1;
       &#discover {
         height: 680px;
       }
