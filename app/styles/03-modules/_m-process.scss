@@ -5,103 +5,103 @@
 .m-process-step-header {
   @include grid-column(12);
   text-align: center;
+  hyphens: none;
+  @media #{$small-only} {
+    @extend .typl8-gamma;
+  }
 }
 
-.path-container{
-  margin-top: 50px;
-  margin-bottom: 70px;
+.m-process-wrapper {
   position: relative;
-
-  .path-item{  
-    .circle{
-      background-color: #ccc;
-      background-size: 6rem 6rem;
-      border-radius: 50%;
-      width: 6rem;
-      height: 6rem;
-      position: relative;
-      margin-bottom: 10rem;
-      z-index:2;
-      &.circle-left{
-        // left: 1.5rem;
+  text-align: center;
+  .m-process-step-item {
+    @include grid-row();
+    margin-bottom: 3.3rem;
+    @media screen and (min-width: 712px) and (max-width: 955px) {
+      text-align: left;
+      .m-process-icon-content {
+        @include grid-column(3);
       }
-      &.circle-right{
-        // right: 1.5rem;
+      .m-process-copy-content {
+        @include grid-column(9);
+      }
+      &.odd {
+        text-align: right;
+        .m-process-icon-content {
+          @include grid-column($columns: 3, $push: 9);
+        }
+        .m-process-copy-content {
+          @include grid-column($columns: 9, $pull: 3);
+        }
+      }
+    }
+    @media screen and (min-width: 956px) {
+      text-align: right;
+      .m-process-icon-content {
+      }
+      .m-process-copy-content {
+        @include grid-column(5);
+        margin-top: -10rem;
+      }
+      &.odd {
+        text-align: left;
+        .m-process-icon-content {
+          // @include grid-column($columns: 3, $push: 9);
+        }
+        .m-process-copy-content {
+          @include grid-column($columns: 5, $push: 7);
+        }
       }
     }
   }
-  .line {
-    background: #ddd;
-    width: 2px;
-    bottom: 0;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    z-index: 0;
-    height: 1164px;
-    &#discover {
-      height: 680px;
-    }
-    &#design {
-      height: 380px;
-    }
-    &#create {
-      height: 380px;
-    }
-
-  }
-}
-  
-/*------------------------------------
- medium timeline styles
-------------------------------------*/
-  
-@media only screen and (max-width: 800px) and (min-width: 768px) {
-  .line {
-    display: none !important;
-  }
-  .large-5.columns.path-text {
-    width: 70%;
-    right: 0;
-    margin-left: 15px;
-  }
-  .path-item .large-7 {
-    width: 25%;
-  }
-  .push-5 {
-    left: 0;
-    float: right;
-  }
-  .circle-right{
-    float: left;
-    right: 0px !important;
-  }
-  .circle-left{
-    left: 0px !important;
-  }
-}
-
-
-/*------------------------------------
- mobile timeline styles
-------------------------------------*/
-
-
-@media only screen and (max-width: 767px){ 
-  .path-container {
-    text-align: center;
-    .circle{
-      // top: 0;
-      right: 0;
-      left: 0;
-      float: none;
-      margin-bottom: 2rem !important;
-      margin-top: 4rem;
-      // margin-left: -3rem;
-      // margin-right: auto;
-    } 
-    .circle-left {
-      left: 40%;
-    }
+  .m-process-icon-content {
+    @include grid-column(12);
   } 
+  .m-process-copy-content {
+    @include grid-column(12);
+  }
+  .m-process-icon {
+    background-color: $secondary-color;
+    background-size: 8rem 8rem;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1.65rem auto;
+    // position: relative;
+    // medium-up
+      // margin-bottom: 10rem;
+    z-index:2;
+  }
+  .line {
+    display: none;
+    @media screen and (min-width: 956px) {
+      display: inline-block;
+      background: $secondary-color;
+      width: 2px;
+      bottom: 0;
+      position: absolute;
+      top: 8rem;
+      left: 50%;
+      z-index: 0;
+      &#discover {
+        height: 680px;
+      }
+      &#design {
+        height: 450px;
+      }
+      &#create {
+        height: 380px;
+      }
+    }
+  }
+
+  .m-process-divider {
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
 }
+
+
+
+
