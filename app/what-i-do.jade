@@ -1,24 +1,29 @@
 extends layout
 
+include views/mixins/footer-nav
+
 block title 
   | What I Do - Sustainable Lifestyle Design
 
 block content
-  .l-what-i-do-content
-    h1 What I Do
+  article.l-main-content
+    .l-what-i-do-content
+      h1 What I Do
 
-    p My work as a lifestyle designer stems from the three following beliefs:
-    ul
-      li I believe lifestyle emanates from the home we live in
-      li I believe a sustainable life starts with a sustainable home
-      li I believe that nature is the ultimate sustainable system.
+      p Whether you're looking to build a lifestyle around a new home or use an existing structure, my expertise lies in understanding your needs and designing the lifestyle of your dreams. To explain what I do, first I'd like to share three beliefs that act as the foundation for all my work:
 
-    aside.typl8-pull-quote
-      blockquote
-        p Using nature as a model, I design homes and their surrounding landscape as a
-          em  unified sustainable system.
-          
-    p I see all the elements of a site&mdash;from the needs of the people who own it, to the type of soil on the land&mdash;as integral pieces to the larger puzzle of a sustainable lifestyle design.
+      ul
+        li I believe lifestyle emanates from our home
+        li I believe a sustainable life begins with a sustainable home
+        li I believe that nature is the ultimate sustainable system.
 
-    p Whether you're looking to build a new home or use an existing home as your base, I will work with you to understand your needs and aspirations as well as the nature of your land. I collaborate with architects, horticulturists, and landscapers to create a unified design for your land and your home that will allow you to live the life you dream of living.
+      p So much of modern design fights against nature instead of working 
+        em with
+        |  nature. Rather than fighting against it, I use nature as a model to design sustainable homes and gardens. I see all the elements of a site&mdash;from the needs of the people, to the composition of the soil&mdash;as integral pieces to the larger puzzle of a sustainable lifestyle design.The result is an organic self-sustaining system designed to meet the needs of the people who live in it.
 
+      +footer-nav(
+        'view my projects',
+        '/projects.html',
+        'explore my process',
+        '/my-process.html'
+        )

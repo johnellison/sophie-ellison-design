@@ -1,0 +1,9 @@
+@mixin global-single-column {
+  @include grid-column(12);
+  @media #{$medium-up} {
+    @include grid-column($columns: 9, $center: true);
+  }
+  @media #{$large-up} {
+    @include grid-column($columns: 8, $center: true);
+  }
+}

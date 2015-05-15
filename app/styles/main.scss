@@ -10,13 +10,16 @@
 // Normalize
 @import 'normalize';
 
+// Typeplate
+@import 'typeplate';
+
 // Foundation Components
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
 // @import 'foundation/components/block-grid';
 // @import 'foundation/components/breadcrumbs';
-// @import 'foundation/components/button-groups';
-// @import 'foundation/components/buttons';
+@import 'foundation/components/button-groups';
+@import 'foundation/components/buttons';
 // @import 'foundation/components/clearing';
 // @import 'foundation/components/dropdown';
 // @import 'foundation/components/dropdown-buttons';
@@ -50,10 +53,6 @@
 // @import 'foundation/components/offcanvas';
 @import 'foundation/components/visibility';
 
-
-// Typeplate
-@import 'typeplate';
-
 // 01-base
 @import '01-base/variables',
         '01-base/animations',
@@ -67,7 +66,11 @@
 // 02-layout
 @import '02-layout/l-layout',
         '02-layout/l-index',
-        '02-layout/l-about';
+        '02-layout/l-about',
+        '02-layout/l-projects',
+        '02-layout/l-what-i-do',
+        '02-layout/l-my-process',
+        '02-layout/l-inspiration';
 
 // 03-modules
 @import '03-modules/m-process';

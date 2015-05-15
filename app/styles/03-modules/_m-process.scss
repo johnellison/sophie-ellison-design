@@ -20,13 +20,13 @@
       width: 6rem;
       height: 6rem;
       position: relative;
-      margin-bottom: 180px;
+      margin-bottom: 10rem;
       z-index:2;
       &.circle-left{
-        left: 1rem;
+        // left: 1.5rem;
       }
       &.circle-right{
-        right: 1rem;
+        // right: 1.5rem;
       }
     }
   }
@@ -91,14 +91,17 @@
   .path-container {
     text-align: center;
     .circle{
-      top: 0;
+      // top: 0;
       right: 0;
       left: 0;
       float: none;
-      margin-bottom: 30px !important;
-      margin-top: 60px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 2rem !important;
+      margin-top: 4rem;
+      // margin-left: -3rem;
+      // margin-right: auto;
     } 
+    .circle-left {
+      left: 40%;
+    }
   } 
 }

@@ -1,14 +1,25 @@
 extends layout
 
+include views/mixins/footer-nav
+
 block title 
   | Projects - Sustainable Lifestyle Design
 
 block content
-  h1 Projects
+  article.l-main-content
+    .l-projects-content
+      h1 Projects
 
-  ul
-    li Downing Community
-    li Project Dehradun
-    li Positive Dialogues
-    li Koshirakura
-    li Negev
+      ul
+        li Downing Community
+        li Project Dehradun
+        li Positive Dialogues
+        li Koshirakura
+        li Negev
+
+      +footer-nav(
+        'watch my video',
+        '/',
+        'read what i do',
+        '/what-i-do.html'
+        )

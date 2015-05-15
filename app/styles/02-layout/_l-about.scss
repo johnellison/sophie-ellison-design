@@ -1,9 +1,3 @@
-.l-about-content, .l-what-i-do-content, .l-my-story-content {
-  @include grid-column(12);
-  @media #{$medium-up} {
-    @include grid-column($columns: 8, $center: true);
-  }
-  @media #{$large-up} {
-    @include grid-column($columns: 7, $center: true);
-  }
+.l-about-content, .l-my-story-content {
+  @include global-single-column;
 }

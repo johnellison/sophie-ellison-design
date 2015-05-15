@@ -10,9 +10,55 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-sans-serif;
 }
 
+h1 {
+  @extend .typl8-beta;
+
+  @media #{$medium-up} {
+    @include typl8-typescale(
+      map-get($typl8-scale, typl8-alpha),
+      $typl8-font-base,
+      '#{$typl8-typescale-unit}',
+      $typl8-measure
+      );
+  }
+
+  @media #{$large-up} {
+    @include typl8-typescale(
+      map-get($typl8-scale, typl8-mega),
+      $typl8-font-base,
+      '#{$typl8-typescale-unit}',
+      $typl8-measure
+      );
+  }
+
+  @media #{$xlarge-up} {
+    @include typl8-typescale(
+      map-get($typl8-scale, typl8-giga),
+      $typl8-font-base,
+      '#{$typl8-typescale-unit}',
+      $typl8-measure
+      );
+  }
+}
+
 .sub-title {
   font-family: $font-family-serif;
   font-style: italic;
   font-weight: 100;
   color: $typl8-copy-color;
+}
+
+a.button {
+  font-variant: small-caps;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.05;
+}
+
+.pull-quote {
+  @extend .typl8-pull-quote;
+}
+
+.drop-cap {
+  @extend .typl8-drop-cap;
 }
