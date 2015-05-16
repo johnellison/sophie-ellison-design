@@ -1,3 +1,12 @@
+.l-page-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.l-main-wrapper {
+  padding-bottom: 3.3rem;
+}
+
 .l-main-content {
   @include grid-row();
   padding: 4rem 0;

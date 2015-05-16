@@ -28,7 +28,7 @@
 @import 'foundation/components/grid';
 @import 'foundation/components/global';
 // @import 'foundation/components/icon-bar';
-// @import 'foundation/components/inline-lists';
+@import 'foundation/components/inline-lists';
 // @import 'foundation/components/joyride';
 // @import 'foundation/components/keystrokes';
 // @import 'foundation/components/labels';
@@ -71,7 +71,8 @@
         '02-layout/l-what-i-do',
         '02-layout/l-my-process',
         '02-layout/l-inspiration',
-        '02-layout/l-contact';
+        '02-layout/l-contact',
+        '02-layout/l-footer';
 
 // 03-modules
 @import '03-modules/m-process';
