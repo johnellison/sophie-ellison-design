@@ -1,3 +1,28 @@
-.l-projects-content {
+.l-projects-index-content, .l-project-content {
   @include global-single-column;
+}
+
+.l-projects-list {
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 3.3rem;
+  }
+}
+
+.l-project-content {
+  // For some reason this first-child selector is not working
+  // p:first-child {
+  //   @extend .drop-cap;
+  // }
+}
+
+#project-photos {
+  background-color: $secondary-color;
+}
+
+.l-project-photos {
+  padding: 3.3rem 0;
+  @include grid-row();
+  text-align: center;
 }

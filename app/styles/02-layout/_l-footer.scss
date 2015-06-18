@@ -11,6 +11,7 @@
   }
   ul.l-social-list {
     // display: table;
+    float: left;
     margin: 0 auto;
     // padding-bottom: .5rem;
     li {
@@ -26,6 +27,17 @@
           height: 1.65rem;
           margin: 0;
         }
+      }
+    }
+  }
+  ul.l-contact-list {
+    list-style: none;
+    margin: 0;
+    float: right;
+    li {
+      margin-right: 1.65rem;
+      a {
+        color: white;
       }
     }
   } 
