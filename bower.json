@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "typeplate-starter-kit": "~2.1.0",
-    "foundation": "~5.5.2"
+    "foundation": "~5.5.2",
+    "jquery-zoom": "~1.7.14"
   },
   "overrides": {
     "foundation": {
@@ -28,4 +29,5 @@
         "js/foundation/foundation.topbar.js"
       ]
     }
+  }
 }

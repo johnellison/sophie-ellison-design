@@ -26,3 +26,15 @@
   @include grid-row();
   text-align: center;
 }
+
+.zoom {
+  display:inline-block;
+  position: relative;
+  border: 1px solid $body-font-color;
+}
+
+.zoom img {
+  display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
