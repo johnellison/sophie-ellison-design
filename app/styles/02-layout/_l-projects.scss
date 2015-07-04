@@ -38,3 +38,13 @@
 }
 
 .zoom img::selection { background-color: transparent; }
+
+.l-project-marquee {
+  background-color: $secondary-color;
+  height: 70vh;
+  box-shadow: $global-shadow;
+}
+
+.l-project-title {
+  text-align: center;
+}
