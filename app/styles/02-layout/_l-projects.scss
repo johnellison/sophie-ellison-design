@@ -41,13 +41,13 @@
 
 .l-project-marquee {
   background-color: $secondary-color;
-  // height: 70vh;
-  width: 95%;
+  height: 70vh;
   margin: 0 auto;
-  box-shadow: $global-shadow;
   img {
     width: 50%;
     text-align: center;
+    box-shadow: $global-shadow;
+    
   }
 }
 

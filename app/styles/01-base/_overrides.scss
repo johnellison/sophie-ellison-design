@@ -1,3 +1,8 @@
+.top-bar {
+  z-index: 99;
+  box-shadow: $global-shadow;
+}
+
 .top-bar .toggle-topbar.menu-icon a {
   font-family: $font-family-sans-serif;
   letter-spacing: 1.2;
