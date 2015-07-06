@@ -31,23 +31,28 @@
   display:inline-block;
   position: relative;
   border: 1px solid $body-font-color;
+  margin-bottom: .4125rem;
 }
 
 .zoom img {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .zoom img::selection { background-color: transparent; }
 
 .l-project-marquee {
-  background-color: $secondary-color;
-  height: 70vh;
+  // background-color: $secondary-color;
+  // height: auto;
+  height: auto;
+  width: 100%;
   margin: 0 auto;
+  box-shadow: $global-shadow;
   img {
-    width: 50%;
-    text-align: center;
-    box-shadow: $global-shadow;
-    
+    margin: 0;
+    width: 100%;
+    max-height: 50vh;
   }
 }
 
