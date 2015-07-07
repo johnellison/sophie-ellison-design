@@ -1,0 +1,23 @@
+{ 
+  "projects": [
+    {
+      "name": "Downing Community",
+      "photos": [
+        "detailed",
+        "concept",
+        "context",
+        "design",
+        "keynote",
+        "perspective"
+      ]
+    },
+    {
+      "name": "Project Dehradun",
+      "photos": [
+        "name",
+        "name2",
+        "name2"
+      ]
+    }
+  ]
+}
