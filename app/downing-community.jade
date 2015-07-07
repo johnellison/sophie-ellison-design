@@ -44,38 +44,15 @@ block content
     .small-12-columns
       h2 project drawings
 
-      figure
-        span.zoom#detailed
-          img(src="images/downing-community-detailed.jpg", alt="", data-interchange="[ images/downing-community-detailed-small.jpg, (default)], images/downing-community-detailed.jpg, (large)], [ images/downing-community-detailed@2x.jpg, (retina)]")
-        figcaption
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta hic accusantium blanditiis fuga rem, unde harum nostrum dolores laudantium nemo quia aliquam quasi, reiciendis beatae omnis placeat ex aspernatur temporibus.
-
-      figure
-        span.zoom#concept
-          img(src="images/downing-community-concept.jpg", alt="", data-interchange="[ images/downing-community-concept-small.jpg, (default)], images/downing-community-concept.jpg, (large)], [ images/downing-community-concept@2x.jpg, (retina)]")
-        figcaption
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia at qui possimus atque ipsum mollitia consequatur, cumque molestias maiores quos, enim deserunt eius beatae quaerat minus, blanditiis provident eum obcaecati.
-      figure
-        span.zoom#context
-          img(src="images/downing-community-context.jpg", alt="")
-        figcaption
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, necessitatibus voluptatem assumenda placeat facere odio sint veniam voluptatibus similique, nihil ab, ratione esse minus magnam perspiciatis, possimus eligendi dolore suscipit.
-      figure
-        span.zoom#design
-          img(src="images/downing-community-design.jpg", alt="", data-interchange="[ images/downing-community-design-small.jpg, (default)], images/downing-community-design.jpg, (large)], [ images/downing-community-design@2x.jpg, (retina)]")
-        figcaption
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum non cupiditate temporibus totam quidem laboriosam in exercitationem, placeat voluptatum velit aut ipsa consequatur eaque corporis quis, odit accusantium dolorem molestias.
-      figure
-        span.zoom#keynote
-          img(src="images/downing-community-keynote.jpg", alt="", data-interchange="[ images/downing-community-keynote-small.jpg, (default)], images/downing-community-keynote.jpg, (large)], [ images/downing-community-keynote@2x.jpg, (retina)]")
-        figcaption
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi saepe officiis perferendis odio dolore, sint totam commodi adipisci animi quod alias sed nesciunt rem iste iusto sapiente aperiam debitis hic!
-      figure
-        span.zoom
-          img(src="images/downing-community-perspective.jpg", alt="", data-interchange="[ images/downing-community-perspective-small.jpg, (default)], images/downing-community-perspective.jpg, (large)], [ images/downing-community-perspective@2x.jpg, (retina)]")
-
-        figcaption
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi saepe officiis perferendis odio dolore, sint totam commodi adipisci animi quod alias sed nesciunt rem iste iusto sapiente aperiam debitis hic!
+      each photo in ['detailed', 'concept', 'context', 'design', 'keynote', 'perspective']
+        figure
+          span.zoom&attributes({'data-zoom': photo})
+            img(
+              src="images/downing-community-" + photo + ".jpg",
+              alt="downing community project " + photo + " photo",
+              data-interchange="[ images/downing-community-" + photo + "-small.jpg, (default)], images/downing-community-" + photo + ".jpg, (large)], [ images/downing-community-" + photo + "@2x.jpg, (retina)]")
+          figcaption
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae voluptatem doloribus at, illo veniam labore enim perferendis cupiditate esse nesciunt asperiores porro aperiam, quaerat dicta similique velit, fugit impedit.
 
       figure
         span.zoom
@@ -83,7 +60,7 @@ block content
           img(src="http://placehold.it/950x500", alt="")
 
         figcaption
-          p  ground floor
+          p ground floor
 
       figure
         span.zoom
@@ -91,7 +68,7 @@ block content
 
         figcaption
           img(src="http://placehold.it/950x500", alt="")
-          p  first floor
+          p first floor
   .row
     .small-12-columns.medium-7-columns.medium-centered
       h3 Want To See More?

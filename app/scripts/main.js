@@ -6,13 +6,13 @@
   (function($){
     $(document).foundation();
 
-    $('#detailed').zoom({url: 'images/downing-community-detailed@3x.jpg'});
-    $('#concept').zoom({url: 'images/downing-community-concept@3x.jpg'});
-    $('#context').zoom({url: 'images/downing-community-context@3x.jpg'});
-    $('#design').zoom({url: 'images/downing-community-design@3x.jpg'});
-    $('#keynote').zoom({url: 'images/downing-community-keynote@3x.jpg'});
+    var photos = ['detailed', 'concept', 'context', 'design', 'keynote', 'perspective'];
 
-
+    // for (var i = 0; i < photos.length; i++) {
+    //   var output = $('.zoom').data('zoom', photos[i]).zoom({ 
+    //     url: 'images/downing-community-' + photos[i] + '@3x.jpg'
+    //     });      
+    // }     
 
     $('.l-project-slider').slick({
       dots: true,
