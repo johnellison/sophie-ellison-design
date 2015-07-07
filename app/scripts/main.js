@@ -8,11 +8,15 @@
 
     var photos = ['detailed', 'concept', 'context', 'design', 'keynote', 'perspective'];
 
-    // for (var i = 0; i < photos.length; i++) {
-    //   var output = $('.zoom').data('zoom', photos[i]).zoom({ 
-    //     url: 'images/downing-community-' + photos[i] + '@3x.jpg'
-    //     });      
-    // }     
+    function zoomPhoto(name) {
+      $('.zoom[data-zoom="' + name + '"]').zoom({
+        url: 'images/downing-community-' + name + '@3x.jpg'
+      });
+    }
+
+    for (var i = 0; i < photos.length; i++) {
+      zoomPhoto(photos[i]);
+    }
 
     $('.l-project-slider').slick({
       dots: true,

@@ -46,13 +46,13 @@ block content
 
       each photo in ['detailed', 'concept', 'context', 'design', 'keynote', 'perspective']
         figure
-          span.zoom&attributes({'data-zoom': photo})
+          span.zoom(data-zoom= photo)
             img(
               src="images/downing-community-" + photo + ".jpg",
               alt="downing community project " + photo + " photo",
               data-interchange="[ images/downing-community-" + photo + "-small.jpg, (default)], images/downing-community-" + photo + ".jpg, (large)], [ images/downing-community-" + photo + "@2x.jpg, (retina)]")
           figcaption
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi recusandae voluptatem doloribus at, illo veniam labore enim perferendis cupiditate esse nesciunt asperiores porro aperiam, quaerat dicta similique velit, fugit impedit.
+            p= photo
 
       figure
         span.zoom
