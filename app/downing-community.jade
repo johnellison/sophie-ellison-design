@@ -30,7 +30,8 @@ block content
     .small-12-columns
       h2 project drawings
 
-      each photo in ['detailed', 'concept', 'context', 'design', 'keynote', 'perspective']
+      //- Uses gulp-data to pull in photos from data/photos.json
+      each photo in photos
         figure
           span.zoom(data-zoom= photo)
             img(

@@ -2,12 +2,16 @@
 'use strict';
 // generated on 2015-05-12 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
+var fs = require('fs');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])
+    .pipe($.data( function(file) {
+      return JSON.parse(fs.readFileSync('app/data/photos.json'));
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'));
 });
