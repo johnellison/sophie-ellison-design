@@ -27,19 +27,21 @@ block content
       p This project is the first of many that I hope to design with  a “whole integative approach”.
 
   .row
-    .small-12-columns
+    .small-12.columns
       h2 project drawings
 
       //- Uses gulp-data to pull in photos from data/photos.json
-      each photo in photos
-        figure
-          span.zoom(data-zoom= photo)
-            img(
-              src="images/downing-community-" + photo + ".jpg",
-              alt="downing community project " + photo + " photo",
-              data-interchange="[ images/downing-community-" + photo + "-small.jpg, (default)], images/downing-community-" + photo + ".jpg, (large)], [ images/downing-community-" + photo + "@2x.jpg, (retina)]")
-          figcaption
-            p= photo
+      //- each photo in photos
+      //-   figure
+      //-     span.zoom(data-zoom= photo)
+      //-       img(
+      //-         src="images/downing-community-" + photo + ".jpg",
+      //-         alt="downing community project " + photo + " photo",
+      //-         data-interchange="[ images/downing-community-" + photo + "-small.jpg, (default)], images/downing-community-" + photo + ".jpg, (large)], [ images/downing-community-" + photo + "@2x.jpg, (retina)]")
+      //-     figcaption
+      //-       p= photo
+
+      +list-project-photos(downing-community, photos)
 
       figure
         span.zoom

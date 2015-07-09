@@ -7,6 +7,11 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
+gulp.task('data', function () {
+  return gulp.src('app/data/*.json')
+    .pipe(gulp.dest('dist/data'));
+});
+
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])
     .pipe($.data( function(file) {

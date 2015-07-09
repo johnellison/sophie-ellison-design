@@ -1,0 +1,10 @@
+mixin list-project-photos(projectName, projectPhotos)
+  each photo in projectPhotos
+    figure
+      span.zoom(data-zoom= photo)
+        img(
+          src="images/" + projectName + photo + ".jpg",
+          alt= projectName + "project " + photo + " photo",
+          data-interchange="[ images/" + projectName + photo + "-small.jpg, (default)], images/" + projectName + photo + ".jpg, (large)], [ images/" + projectName + photo + "@2x.jpg, (retina)]")
+      figcaption
+        p= photo

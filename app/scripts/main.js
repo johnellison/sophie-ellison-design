@@ -18,13 +18,6 @@
       }
     });   
 
-    $('.l-project-slider').slick({
-      dots: true,
-      arrows: true,
-      infinite: true,
-      slidesToShow: 3
-    });
-
   }(jQuery));
 
 }());
