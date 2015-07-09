@@ -1,22 +1,122 @@
-{ 
+{
   "projects": [
     {
-      "name": "Downing Community",
+      "name": "downing-community",
       "photos": [
-        "detailed",
-        "concept",
-        "context",
-        "design",
-        "keynote",
-        "perspective"
+        {
+          "name": "detailed",
+          "caption": "detailed caption"
+        },
+        {
+          "name": "concept",
+          "caption": "concept caption"
+        },
+        {
+          "name": "context",
+          "caption": "context caption"
+        },
+        {
+          "name": "design",
+          "caption": "design caption"
+        },
+        {
+          "name": "keynote",
+          "caption": "keynote caption"
+        },
+        {
+          "name": "perspective",
+          "caption": "perspective caption"
+        }
       ]
     },
     {
-      "name": "Project Dehradun",
+      "name": "project-dehradun",
       "photos": [
-        "name",
-        "name2",
-        "name2"
+        {
+          "name": "1",
+          "caption": "1 caption"
+        },
+        {
+          "name": "2",
+          "caption": "2 caption"
+        },
+        {
+          "name": "3",
+          "caption": "3 caption"
+        },
+        {
+          "name": "4",
+          "caption": "4 caption"
+        },
+        {
+          "name": "5",
+          "caption": "5 caption"
+        },
+        {
+          "name": "6",
+          "caption": "6 caption"
+        }
+      ]
+    },
+    {
+      "name": "positive-dialogues",
+      "photos": [
+        {
+          "name": "1",
+          "caption": "1 caption"
+        },
+        {
+          "name": "2",
+          "caption": "2 caption"
+        },
+        {
+          "name": "3",
+          "caption": "3 caption"
+        },
+        {
+          "name": "4",
+          "caption": "4 caption"
+        },
+        {
+          "name": "5",
+          "caption": "5 caption"
+        },
+        {
+          "name": "6",
+          "caption": "6 caption"
+        },
+        {
+          "name": "7",
+          "caption": "7 caption"
+        },
+        {
+          "name": "8",
+          "caption": "8 caption"
+        },
+        {
+          "name": "9",
+          "caption": "9 caption"
+        },
+        {
+          "name": "10",
+          "caption": "10 caption"
+        },
+        {
+          "name": "11",
+          "caption": "11 caption"
+        },
+        {
+          "name": "12",
+          "caption": "12 caption"
+        },
+        {
+          "name": "13",
+          "caption": "13 caption"
+        },
+        {
+          "name": "14",
+          "caption": "14 caption"
+        }
       ]
     }
   ]
