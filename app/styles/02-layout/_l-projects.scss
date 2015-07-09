@@ -17,8 +17,15 @@
   // }
 }
 
-#project-photos {
-  background-color: $secondary-color;
+.l-project-photos-wrapper {
+  @include grid-row();
+}
+
+.l-project-photos-content {
+  @include grid-column(12);
+  img {
+    margin: 0 auto;
+  }
 }
 
 .l-project-photos {

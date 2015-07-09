@@ -1,10 +1,15 @@
-mixin list-project-photos(projectName, projectPhotos)
+mixin list-project-photos(projectName, projectPhotos, isRetina)
   each photo in projectPhotos
     figure
-      span.zoom(data-zoom= photo)
-        img(
-          src="images/" + projectName + photo + ".jpg",
-          alt= projectName + "project " + photo + " photo",
-          data-interchange="[ images/" + projectName + photo + "-small.jpg, (default)], images/" + projectName + photo + ".jpg, (large)], [ images/" + projectName + photo + "@2x.jpg, (retina)]")
+      span.zoom(data-zoom= photo.name)
+        if isRetina 
+          img(
+            src="images/" + projectName + "-" + photo.name + ".jpg",
+            alt=projectName + " project " + photo.name + " photo",
+            data-interchange="[ images/" + projectName + "-" + photo.name + "-small.jpg, (default)], images/" + projectName + "-" + photo.name + ".jpg, (large)], [ images/" + projectName + "-" + photo.name + "@2x.jpg, (retina)]")
+        else
+          img(
+            src="images/" + projectName + "-" + photo.name + ".jpg",
+            alt=projectName + " project " + photo.name + " photo")
       figcaption
-        p= photo
+        p= photo.caption

@@ -15,7 +15,7 @@ gulp.task('data', function () {
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])
     .pipe($.data( function(file) {
-      return JSON.parse(fs.readFileSync('app/data/photos.json'));
+      return JSON.parse(fs.readFileSync('app/data/projects.json'));
     }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'));
@@ -112,9 +112,11 @@ gulp.task('serve', ['styles', 'views'], function () {
     'app/*.html',
     '.tmp/*.html',
     'app/scripts/**/*.js',
-    'app/images/**/*'
+    'app/images/**/*',
+    'app/data/*.json'
   ]).on('change', reload);
 
+  gulp.watch('app/data/*.json', ['views']); 
   gulp.watch('app/styles/**/*.scss', ['styles']);
   // gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep']);

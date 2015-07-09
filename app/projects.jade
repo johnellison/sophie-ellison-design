@@ -11,40 +11,13 @@ block content
       h1 Projects
 
       ul.l-projects-list
-        li
-          a(href="/downing-community.html")
-            h2 downing community
-            img(src="http://placehold.it/600x300", alt="")
-          p Downing Community is a community of culture and hope for the Bhutanese refugees Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.
-          a.button(href="/downing-community.html") read more
-
-        li
-          a(href="/project-dehradun.html")
-            h2 project dehradun
-            img(src="http://placehold.it/600x300", alt="")
-          p Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.
-          a.button(href="/project-dehradun.html") read more
-
-        li
-          a(href="/positive-dialgoues.html")
-            h2 positive dialogues
-            img(src="http://placehold.it/600x300", alt="")
-          p Positive Dialogues was a collaboration with the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices.
-          a.button(href="/positive-dialogues.html") read more
-
-        li
-          a(href="/koshirakura.html")
-            h2 koshirakura
-            img(src="http://placehold.it/600x300", alt="")
-          p Building on the belief that “food brings people together”, a number of students including myself joined architect, Shin Egashira to work with a local, rural community in Koshirakura, Japan to build a wood-fired oven and A-frame timber shelter. This would provide a space for the community to gather, socialise, cook, eat and take time away from their work - mainly agricultural.
-          a.button(href="/koshirakura.html") read more
-
-        li
-          a(href="/negev.html")
-            h2 negev
-            img(src="http://placehold.it/600x300", alt="")
-          p In the middle of the Negev desert in Israel, I volunteered in the process of building a family of four’s straw-bale house, designed by Nava Beja, Ecoarc. The regulation is Israel is such that a concrete bomb shelter must be constructed on the basement level, so only the upper level was straw bale. I was mainly involved in the clay and lime plastering of the house yet learnt about the entire structure simply by working within the exposed structure.
-          a.button(href="/negev.html") read more
+        each project in projects
+          li
+            a(href="/" + project.name + ".html")
+              h2= project.name
+              img(src= project.name + "-thumbnail.jpg", alt="")
+            p= project.description
+            a.button(href="/" + project.name + ".html") read more
 
       +footer-nav(
         'watch my video',
