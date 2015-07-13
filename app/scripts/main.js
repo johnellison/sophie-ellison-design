@@ -12,10 +12,17 @@
       });
     }
 
-    $.getJSON( 'data/photos.json', function(data) {
-      for (var i = 0; i < data.photos.length; i++) {
-        zoomPhoto(data.photos[i]);
+    function zoomProjectPhotos(data, projectId) {
+      var project = data.projects[projectId];
+      var photos = project.photos;
+
+      for (var i = 0; i < photos.length; i++) {
+        zoomPhoto(photos[i].name);
       }
+    }
+
+    $.getJSON( 'data/projects.json', function(data) {
+      zoomProjectPhotos(data, 0);
     });   
 
   }(jQuery));
