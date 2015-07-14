@@ -7,13 +7,11 @@ block content
   //- Variables for template
   - var project = projects[1]
 
-  header.l-project-marquee
-    img(src="images/" + project.name + "-marquee.jpg", alt="")
+  +project-header(project)
 
   article.l-main-content
+    h1.l-project-title #{capitalize(humanize(project.name))}
     .l-project-content
-      h1 Project Dehradun
-
       p.drop-cap Project Dehradun was a collaboration between the Community Cluster, an organisation that I co-founded and Nanhi Dunya, an education-based charitable organization in Dehradun, Northern India. 
 
       p Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.

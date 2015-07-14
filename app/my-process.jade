@@ -26,8 +26,8 @@ block content
                       img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
                   .m-process-copy-content
                     //- need to upcase first letter and humanize
-                    h3= substep.name
-                    p= substep.description
+                    h3 #{capitalize(humanize(substep.name))}
+                    p #{substep.description}
                 span.line(id=substep.name)
             else 
               .m-process-step-item
@@ -36,8 +36,8 @@ block content
                     img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
                 .m-process-copy-content
                   //- need to upcase first letter and humanize
-                  h3= substep.name
-                  p= substep.description
+                  h3 #{capitalize(humanize(substep.name))}
+                  p #{substep.description}
               span.line(id=substep.name)
       .row
         .l-my-process-footer    

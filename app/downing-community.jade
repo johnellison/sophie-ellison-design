@@ -7,11 +7,10 @@ block content
   //- Variables for template
   - var project = projects[0]
   
-  header.l-project-marquee
-    img(src="images/" + project.name + "-marquee.jpg", alt="")
+  +project-header(project)
 
   article.l-main-content
-    h1.l-project-title Downing Community
+    h1.l-project-title #{capitalize(humanize(project.name))}
 
     .l-project-content
       p.drop-cap There is serious affordable housing crisis in Denver. Last year alone, 70,000 refugees entered the USA&mdash;2200 of them arrived in Denver. 25% of these refugees are Bhutanese families coming from rural agrarian societies.

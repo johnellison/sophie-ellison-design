@@ -4,10 +4,14 @@ block title
   | Koshirakura - Sustainable Lifestyle Design
 
 block content
+  //- Variables for template
+  - var project = projects[3]
+  
+  +project-header(project)
+
   article.l-main-content
+    h1.l-project-title #{capitalize(project.name)}
     .l-project-content
-      h1 Koshirakura
-      img(src="http://placehold.it/600x300", alt="")
       p.drop-cap Building on the belief that “food brings people together”, a number of students including myself joined architect, Shin Egashira to work with a local, rural community in Koshirakura, Japan to build a wood-fired oven and A-frame timber shelter. This would provide a space for the community to gather, socialise, cook, eat and take time away from their work - mainly agricultural. 
 
       p The heart of the project lay in the relationship and collaboration with the local community. We worked alongside them from design to build, and from festivals to song.
