@@ -27,7 +27,7 @@ gulp.task('gdata', function () {
     .pipe(gulp.dest('dist/data'));
 });
 
-gulp.task('views', function () {
+gulp.task('views', ['jshint'], function () {
   return gulp.src(['app/*.jade', '!app/views/layouts/*.jade'])
     .pipe($.data( function(file) {
       return JSON.parse(fs.readFileSync('app/data/projects.json'));
