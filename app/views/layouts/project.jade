@@ -11,8 +11,6 @@ html(lang='')
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css
     // bower:css
-    link(rel='stylesheet', href='/bower_components/slick.js/slick/slick.css')
-    //- link(rel='stylesheet', href='/bower_components/slick.js/slick/slick-theme.css')
     // endbower
     // endbuild
     // build:css styles/main.css
@@ -38,12 +36,12 @@ html(lang='')
         |  to improve your experience.
 
     .l-page-wrapper
-      include views/includes/header
+      include ../includes/header
 
       div(role='main').l-main-wrapper
         block content
 
-      include views/includes/footer
+      include ../includes/footer
 
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
@@ -62,9 +60,6 @@ html(lang='')
     script(src='/bower_components/jquery.cookie/jquery.cookie.js')
     script(src='/bower_components/jquery-placeholder/jquery.placeholder.js')
     script(src='/bower_components/foundation/js/foundation/foundation.js')
-    script(src='/bower_components/foundation/js/foundation/foundation.accordion.js')
-    script(src='/bower_components/foundation/js/foundation/foundation.alert.js')
-    script(src='/bower_components/foundation/js/foundation/foundation.clearing.js')
     script(src='/bower_components/foundation/js/foundation/foundation.dropdown.js')
     script(src='/bower_components/foundation/js/foundation/foundation.equalizer.js')
     script(src='/bower_components/foundation/js/foundation/foundation.interchange.js')
@@ -78,9 +73,10 @@ html(lang='')
     script(src='/bower_components/foundation/js/foundation/foundation.tooltip.js')
     script(src='/bower_components/foundation/js/foundation/foundation.topbar.js')
     script(src='/bower_components/jquery-zoom/jquery.zoom.js')
-    script(src='/bower_components/slick.js/slick/slick.min.js')
     // endbower
     // endbuild
     // build:js scripts/main.js
     script(src='scripts/main.js')
+    script(src='scripts/projects.js')
     // endbuild
+    block page-script

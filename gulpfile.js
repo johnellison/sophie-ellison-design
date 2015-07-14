@@ -7,13 +7,28 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-gulp.task('data', function () {
+var _gulpsrc = gulp.src;
+gulp.src = function() {
+    return _gulpsrc.apply(gulp, arguments)
+    .pipe($.plumber({
+        errorHandler: function(err) {
+            $.notify.onError({
+                title:    "Gulp Error",
+                message:  "Error: <%= error.message %>",
+                sound:    "Bottle"
+            })(err);
+            this.emit('end');
+        }
+    }));
+};
+
+gulp.task('gdata', function () {
   return gulp.src('app/data/*.json')
     .pipe(gulp.dest('dist/data'));
 });
 
 gulp.task('views', function () {
-  return gulp.src(['app/*.jade', '!app/layout.jade'])
+  return gulp.src(['app/*.jade', '!app/views/layouts/*.jade'])
     .pipe($.data( function(file) {
       return JSON.parse(fs.readFileSync('app/data/projects.json'));
     }))
@@ -133,11 +148,11 @@ gulp.task('wiredep', function () {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layout.jade')
+  gulp.src('app/views/layouts/*.jade')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('app'));
+    .pipe(gulp.dest('app/views/layouts'));
 });
 
 gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
