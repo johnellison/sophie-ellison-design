@@ -6,6 +6,9 @@ block title
   | Projects - Sustainable Lifestyle Design
 
 block content
+  - function removeHyphens(string) { return string.split('-'); };
+  - function outputWords(words) { return words.join(' '); };
+  - function humanize(name) { var words = removeHyphens(name); return outputWords(words); };
   article.l-main-content
     .l-projects-index-content
       h1 Projects
@@ -14,8 +17,10 @@ block content
         each project in projects
           li
             a(href="/" + project.name + ".html")
-              h2= project.name
-              img(src= project.name + "-thumbnail.jpg", alt="")
+              h2 #{humanize(project.name)}
+              img(src="images/" + project.name + "-thumb.jpg",
+              alt=project.name + " project " + " thumbnail",
+              data-interchange="[ images/" + project.name + "thumb.jpg, (default)], [ images/" + project.name + "-thumb@2x.jpg, (retina)]").l-project-thumb
             p= project.description
             a.button(href="/" + project.name + ".html") read more
 

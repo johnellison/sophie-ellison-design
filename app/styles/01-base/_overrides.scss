@@ -22,28 +22,33 @@
   width: 100%;
   @include grid-row();
   &:before {
-    content: attr(data-grouptype);
-    z-index: 2;
-    color: $header-font-color;
-    display: block;
-    font-size: 1rem;
-    padding: .45em .25em .25em .55em;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    left: 50%;
-    top: 0.55rem;
-    height: 2rem;
-    width: 2rem;
-    margin-left: -1rem;
-    line-height: 1;
-    // font-family: $font-family-sans-serif;
-    // font-variant: small-caps;
-    font-size: 1rem;
-    font-style: italic;
+    @media #{$medium-up} {
+      content: attr(data-grouptype);
+      z-index: 2;
+      color: $header-font-color;
+      display: block;
+      font-size: 1rem;
+      padding: .45em .25em .25em .55em;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 0.55rem;
+      height: 2rem;
+      width: 2rem;
+      margin-left: -1rem;
+      line-height: 1;
+      // font-family: $font-family-sans-serif;
+      // font-variant: small-caps;
+      font-size: 1rem;
+      font-style: italic;
+    }
   }
   .button {
-    @include grid-column(6);
+    width: 100%;
+    @media #{$medium-up} {
+      @include grid-column(6);
+    }
   }
 }
 

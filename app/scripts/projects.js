@@ -1,7 +1,8 @@
-function zoomProjectPhotos(data, projectId) {
+var project = {
+  zoomPhotos: function(data, projectId) {
     var project = data.projects[projectId];
     var photos = project.photos;
-    console.log('project: ' + project + 'photos: ' + photos);
+
     for (var i = 0; i < photos.length; i++) {
       var photo = photos[i];
 
@@ -10,3 +11,4 @@ function zoomProjectPhotos(data, projectId) {
       });
     }
   }
+};
