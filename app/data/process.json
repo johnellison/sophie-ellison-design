@@ -1,0 +1,54 @@
+{
+  "process": [
+    {
+      "name": "discover",
+      "substeps": [
+        {
+          "name": "interview",
+          "description": "I meet with you to get a deeper understanding of exactly what you’re looking for. We will talk through your goals, visions, dreams, logistics, budget and much more.",
+          "id": 1
+        },
+        {
+          "name": "observation",
+          "description": "I perform an initial observation of your site;  its soil types, microclimates, patterns, cycles, wildlife habits and existing habitats. I also sketch your home; it’s layout, orientation, scale, microclimates, opening, use and views.",
+          "id": 2
+        },
+        {
+          "name": "site-analysis",
+          "description": "Using technology and observation, I bring together climatic, habitat and topographic data for you site, and use this as the basis of my design process. This includes a range of analyses&mdash;from wind direction and speed, to soil composition and native plant species.",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "name": "design",
+      "substeps": [
+        {
+          "name": "conceptual",
+          "description": "Using all aspects of the discovery phase, I come up with one or more initial designs for your site. This design will bring together all elements into one unified design, each one connected and benefitting from another. If you are also designing a new home, this phase also includes conceptual drawings from the architect who I work alongside.",
+          "id": 4
+        },
+        {
+          "name": "detailed",
+          "description": "There will most likely be some back and forths with the conceptual design, but once we have landed on something we are all happy with, I draw a detailed design. This is the final stage before implementation and the drawings will be ready to hand over to the landscapers.",
+          "id": 5
+        }
+      ]
+    },
+    {
+      "name": "create",
+      "substeps": [
+        {
+          "name": "planning",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit recusandae molestias quod quos, ducimus nemo vel sapiente! Nobis dignissimos laborum maiores, dicta doloribus cupiditate expedita saepe quam eligendi sed hic?",
+          "id": 6
+        },
+        {
+          "name": "implementation",
+          "description": "Finally, I gather a team of experts to implement the design and make any last minute adjustments on site.",
+          "id": 7
+        }
+      ]
+    }
+  ]
+}

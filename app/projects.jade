@@ -1,14 +1,10 @@
 extends views/layouts/default
 
-include views/mixins/footer-nav
-
 block title 
   | Projects - Sustainable Lifestyle Design
 
 block content
-  - function removeHyphens(string) { return string.split('-'); };
-  - function outputWords(words) { return words.join(' '); };
-  - function humanize(name) { var words = removeHyphens(name); return outputWords(words); };
+  include views/helpers/humanizeName
   article.l-main-content
     .l-projects-index-content
       h1 Projects
@@ -17,7 +13,7 @@ block content
         each project in projects
           li
             a(href="/" + project.name + ".html")
-              h2 #{humanize(project.name)}
+              h2 #{humanizeName(project.name)}
               img(src="images/" + project.name + "-thumb.jpg",
               alt=project.name + " project " + " thumbnail",
               data-interchange="[ images/" + project.name + "thumb.jpg, (default)], [ images/" + project.name + "-thumb@2x.jpg, (retina)]").l-project-thumb

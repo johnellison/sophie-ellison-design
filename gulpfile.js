@@ -32,6 +32,9 @@ gulp.task('views', function () {
     .pipe($.data( function(file) {
       return JSON.parse(fs.readFileSync('app/data/projects.json'));
     }))
+    .pipe($.data( function(file) {
+      return JSON.parse(fs.readFileSync('app/data/process.json'));
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'));
 });

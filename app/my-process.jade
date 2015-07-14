@@ -8,90 +8,37 @@ block title
 block content
   article.l-main-content  
     section.l-my-process
-      //- header.l-my-process
       .row 
         header.l-my-process-header
           h1 My Process
-      //- process-timeline-wrapper
-      .m-process-wrapper
-        .m-process-step-header-wrapper
-          .m-process-step-header
-            h2 1. discover
-            
-        .m-process-step-item
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/interview-icon.svg", alt="")#interview
-          .m-process-copy-content
-            h3 Interview
-            p I meet with you to get a deeper understanding of exactly what you’re looking for. We will talk through your goals, visions, dreams, logistics, budget and much more.
 
-        .m-process-step-item.odd
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/observation-icon.svg", alt="")#observation
-
-          .m-process-copy-content
-            h3 Observation
-            p I perform an initial observation of your site;  its soil types, microclimates, patterns, cycles, wildlife habits and existing habitats. I also sketch your home; it’s layout, orientation, scale, microclimates, opening, use and views. 
-        .m-process-step-item
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/site-analysis-icon.svg", alt="")#analysis
-
-          .m-process-copy-content
-            h3 Site Analysis
-            p Using technology and observation, I bring together climatic, habitat and topographic data for you site, and use this as the basis of my design process. This includes a range of analyses&mdash;from wind direction and speed, to soil composition and native plant species.
-        span.line#discover
-        hr.m-process-divider
-
-      .m-process-wrapper
-        .m-process-step-header-wrapper
-          .m-process-step-header
-            h2 2. design
-
-        .m-process-step-item.odd
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/conceptual-design-icon.svg", alt="")
-
-          .m-process-copy-content
-            h3 Conceptual
-            p Using all aspects of the discovery phase, I come up with one or more initial designs for your site. This design will bring together all elements into one unified design, each one connected and benefitting from another. If you are also designing a new home, this phase also includes conceptual drawings from the architect who I work alongside. 
-        .m-process-step-item
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/detailed-design-icon.svg", alt="")#detailed
-
-          .m-process-copy-content
-            h3 Detailed
-            p There will most likely be some back and forths with the conceptual design, but once we have landed on something we are all happy with, I draw a detailed design. This is the final stage before implementation and the drawings will be ready to hand over to the landscapers. 
-        span.line#design
-        hr.m-process-divider
-      .m-process-wrapper
-        .m-process-step-header-wrapper
-          .m-process-step-header
-            h2 3. create
-
-        .m-process-step-item.odd
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/planning-icon.svg", alt="")
-
-          .m-process-copy-content
-            h3 Planning
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim, quas? Corrupti fuga iusto iure architecto a asperiores eum ullam. Dolore velit ullam, enim, soluta deleniti harum ab. Iste, quasi? 
-
-        .m-process-step-item
-          .m-process-icon-content
-            .m-process-icon
-              img(src="images/implementation-icon.svg", alt="")#implementation
-
-          .m-process-copy-content
-            h3 Implementation
-            p Finally, I gather a team of experts to implement the design and make any last minute adjustments on site. 
-        
-        span.line#create
+      each step, index in process
+        .m-process-wrapper
+          .m-process-step-header-wrapper
+            .m-process-step-header
+              h2= index + 1 + ". " + step.name
+          each substep in step.substeps
+            //- If the substep is odd, add .odd
+            if substep.id % 2 == 0
+              .m-process-step-item.odd
+                  .m-process-icon-content
+                    .m-process-icon
+                      img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
+                  .m-process-copy-content
+                    //- need to upcase first letter and humanize
+                    h3= substep.name
+                    p= substep.description
+                span.line(id=substep.name)
+            else 
+              .m-process-step-item
+                .m-process-icon-content
+                  .m-process-icon
+                    img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
+                .m-process-copy-content
+                  //- need to upcase first letter and humanize
+                  h3= substep.name
+                  p= substep.description
+              span.line(id=substep.name)
       .row
         .l-my-process-footer    
           +footer-nav(
