@@ -1,0 +1,17 @@
+extends views/layouts/project
+
+block title 
+  | Manzano - Sophie Ellison Design
+
+block content
+  //- Variables for template
+  - var project = projects[5]
+  
+  +project-header(project)
+
+  article.l-main-content
+    h1.l-project-title #{capitalize(project.name)}
+    .l-project-content
+      p.drop-cap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, recusandae vel. Earum eius officia hic veniam corporis et aliquam maxime quasi consequuntur esse culpa mollitia tenetur placeat, unde, fuga cumque.
+
+    +list-project-photos(project.name, project.photos, false)

@@ -1,3 +1,13 @@
+.l-what-i-do-header {
+  text-align: center;
+  h1 {
+    margin-bottom: .825rem;
+  }
+  .sub-title {
+    margin-bottom: 4.125rem;
+  }
+}
+
 .l-what-i-do-content {
   @include global-single-column;
 }

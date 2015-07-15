@@ -1,7 +1,7 @@
 extends views/layouts/project
 
 block title 
-  | Koshirakura - Sustainable Lifestyle Design
+  | Koshirakura - Sophie Ellison Design
 
 block content
   //- Variables for template
@@ -17,3 +17,5 @@ block content
       p The heart of the project lay in the relationship and collaboration with the local community. We worked alongside them from design to build, and from festivals to song.
 
       p The A-frame timber structure serves as a shelter for both oven and people and the timber shuttering is designed to protect it from heavy annual rain and snowfall. 
+
+    +list-project-photos(project.name, project.photos, false)

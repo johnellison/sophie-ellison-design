@@ -1,7 +1,7 @@
 extends views/layouts/project
 
 block title 
-  | Negev - Sustainable Lifestyle Design
+  | Negev - Sophie Ellison Design
 
 block content
   //- Variables for template
@@ -12,5 +12,6 @@ block content
   article.l-main-content
     h1.l-project-title #{capitalize(project.name)}
     .l-project-content
-      img(src="http://placehold.it/600x300", alt="")
       p.drop-cap In the middle of the Negev desert, Israel, I volunteered in the process of building a family of four’s straw-bale house, designed by Nava Beja. The regulation is Israel is such that a concrete bomb shelter must be constructed on the basement level, so only the upper level was straw bale. I was mainly involved in the clay and lime plastering of the house yet learnt about the entire structure simply by working within the exposed structure.
+
+    +list-project-photos(project.name, project.photos, false)
