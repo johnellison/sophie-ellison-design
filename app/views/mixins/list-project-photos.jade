@@ -6,7 +6,7 @@ mixin list-project-photos(projectName, projectPhotos, isRetina)
           img(
             src="images/" + projectName + "-" + photo.name + ".jpg",
             alt=projectName + " project " + photo.name + " photo",
-            data-interchange="[ images/" + projectName + "-" + photo.name + "-small.jpg, (default)], images/" + projectName + "-" + photo.name + ".jpg, (large)], [ images/" + projectName + "-" + photo.name + "@2x.jpg, (retina)]")
+            data-interchange="[ images/" + projectName + "-" + photo.name + "-small.jpg, (default)], [images/" + projectName + "-" + photo.name + ".jpg, (large)], [ images/" + projectName + "-" + photo.name + "@2x.jpg, (retina)]")
         else
           img(
             src="images/" + projectName + "-" + photo.name + ".jpg",
