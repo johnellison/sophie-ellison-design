@@ -80,6 +80,12 @@ a.button {
 
 .blockquote {
   @include typl8-blockquote("—");
+  small {
+    letter-spacing: .8125px;
+  }
+  a {
+    color: $primary-color;
+  }
 }
 
 .pull-quote {

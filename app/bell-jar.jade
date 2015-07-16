@@ -1,0 +1,25 @@
+extends views/layouts/project
+
+block title 
+  | Project Dehradun - Sophie Ellison Design
+
+block content
+  //- Variables for template
+  - var project = projects[2]
+
+  +project-header(project)
+
+  article.l-main-content
+    h1.l-project-title #{capitalize(humanize(project.name))}
+    .l-project-content
+      p.drop-cap  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea libero incidunt in perferendis impedit quae, cupiditate aut natus veniam consequatur, provident laudantium qui tenetur esse aliquid voluptatem recusandae, minima!
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat fugiat omnis, aut laborum, nemo blanditiis, quam vel error, repellat hic molestias. Natus quisquam, enim perferendis excepturi corporis! Neque, quam.
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nisi cum sequi cumque. Aliquam provident, accusantium quidem suscipit laudantium doloremque neque dolores eligendi. Voluptate eum animi, rerum natus eaque commodi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate rem totam, consequuntur magni quod soluta aliquam inventore dolore quisquam itaque enim hic ipsa, error dolores est? Eaque vero, voluptatem commodi!
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet pariatur, dolorem officia sapiente quos recusandae, iste. Atque quae ullam explicabo, eius nulla porro, nam magni impedit error ipsa pariatur, ab?
+
+  section.l-project-photos-wrapper
+    .l-project-photos-content
+      h2 project photos
+
+      //- Uses gulp-data to pull in photos from data/projects.json
+      +list-project-photos(project.name, project.photos, false)
