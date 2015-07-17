@@ -126,59 +126,71 @@
       "photos": [
         {
           "name": "1",
-          "caption": "Lorem ipsum dolor sit amet, con."
+          "caption": "Bell Park Site Plan."
         },
         {
           "name": "2",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing eli."
+          "caption": "Model of a section of the library at Bell Park."
         },
         {
           "name": "3",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adip."
+          "caption": "Model of the central earth wall and staircase in the library at Bell Park."
         },
         {
           "name": "4",
-          "caption": "Lorem ipsum dolor sit amet, ."
+          "caption": "Perspective drawing of the river from Bell Park."
         },
         {
           "name": "5",
-          "caption": "Lorem ipsum dolor sit amet, consectetur ad."
+          "caption": "Sketch of Larimer corner at Bell Park."
+        },
+        {
+          "name": "5b",
+          "caption": "Perspective sketch of Larimer corner at Bell Park."
         },
         {
           "name": "6",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisi."
+          "caption": "Sketch of the student accommodation at Bell Park."
         },
         {
           "name": "7",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Il."
+          "caption": "Conceptual diagrams of the design for Bell Park."
         },
         {
           "name": "8",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto."
+          "caption": "Detail drawing of how the straw bale wall connects to the rammed earth wall."
         },
         {
           "name": "9",
-          "caption": "Lorem ipsum dolor sit amet, consectetu."
+          "caption": "Detail drawing of the light gap between the stairs and bookshelves in the library."
         },
         {
           "name": "10",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adip."
+          "caption": "Section of Bell Park theatre."
         },
         {
           "name": "11",
-          "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ."
+          "caption": "Section of student accommodation."
+        },
+        {
+          "name": "11b",
+          "caption": "Elevation of library at Bell Park."
         },
         {
           "name": "12",
-          "caption": "Captions here."
+          "caption": "Playing with the conceptual design layout for Bell Park using dominoes!"
         },
         {
           "name": "13",
-          "caption": "Captions here."
+          "caption": "First draft of Bell Park site plan."
+        },
+        {
+          "name": "13b",
+          "caption": "Diagrammatic zoning map of Bell Park site."
         },
         {
           "name": "14",
-          "caption": "Captions here."
+          "caption": "Diagrammatic paper model of the design for Bell Park."
         }
       ]
     },
@@ -233,32 +245,32 @@
       "description": "Building on the belief that “food brings people together”, a number of students including myself joined architect, Shin Egashira to work with a local, rural community in Koshirakura, Japan to build a wood-fired oven and A-frame timber shelter. This would provide a space for the community to gather, socialise, cook, eat and take time away from their work - mainly agricultural.",
       "photos": [
         {
+          "name": "3",
+          "caption": "Community clay pizza oven for the residents of Koshirakura, Japan."
+        },
+        {
           "name": "1",
-          "caption": "1 caption"
+          "caption": "Community clay pizza oven with shading and seating areas."
         },
         {
           "name": "2",
-          "caption": "2 caption"
-        },
-        {
-          "name": "3",
-          "caption": "3 caption"
-        },
-        {
-          "name": "4",
-          "caption": "4 caption"
+          "caption": "Closing up the oven to protect it during the winter months."
         },
         {
           "name": "5",
-          "caption": "5 caption"
+          "caption": "Building the final layers of the clay oven, using fire bricks and a clay mortar mix."
         },
         {
           "name": "6",
-          "caption": "6 caption"
+          "caption": "Giving a workshop in clay building to the local children."
         },
         {
           "name": "7",
-          "caption": "7 caption"
+          "caption": "Deconstructing a previous project to examine it’s structure."
+        },
+        {
+          "name": "4",
+          "caption": "The final night before completion of the oven!"
         }
       ]
     },
@@ -268,31 +280,23 @@
       "photos": [
         {
           "name": "1",
-          "caption": "1 caption"
+          "caption": "North-western side of the house, with it’s first layer of lime and clay plaster."
         },
         {
           "name": "2",
-          "caption": "2 caption"
+          "caption": "Interior storage bench with first layer of plaster on the walls."
         },
         {
           "name": "3",
-          "caption": "3 caption"
-        },
-        {
-          "name": "4",
-          "caption": "4 caption"
-        },
-        {
-          "name": "5",
-          "caption": "5 caption"
+          "caption": "Bedroom with two layers of lime and clay plaster."
         },
         {
           "name": "6",
-          "caption": "6 caption"
+          "caption": "Plastering the initial clay and straw layer to the walls."
         },
         {
-          "name": "7",
-          "caption": "7 caption"
+          "name": "5",
+          "caption": "South-western view of the house."
         }
       ]
     },
@@ -301,32 +305,28 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa dicta, non facilis, sunt ea officiis asperiores illum maiores at facere. Earum neque totam alias laudantium, nostrum non eligendi dolores.",
       "photos": [
         {
+          "name": "7",
+          "caption": "Completing the roof trusses for the straw bale house."
+        },
+        {
           "name": "1",
-          "caption": "1 caption"
-        },
-        {
-          "name": "2",
-          "caption": "2 caption"
-        },
-        {
-          "name": "3",
-          "caption": "3 caption"
+          "caption": "Building the straw bale walls."
         },
         {
           "name": "4",
-          "caption": "4 caption"
-        },
-        {
-          "name": "5",
-          "caption": "5 caption"
+          "caption": "Putting the bales in place in the wall"
         },
         {
           "name": "6",
-          "caption": "6 caption"
+          "caption": "Exposed straw bale walls ready for plastering"
         },
         {
-          "name": "7",
-          "caption": "7 caption"
+          "name": "5",
+          "caption": "Strapping and tightening the straw bale walls, getting ready for plastering."
+        },
+        {
+          "name": "3",
+          "caption": "Getting covered in straw in the building process!"
         }
       ]
     }
