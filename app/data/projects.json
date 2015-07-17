@@ -5,6 +5,10 @@
       "description": "Downing Community is a community of culture and hope for the Bhutanese refugees Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.",
       "photos": [
         {
+          "name": "perspective-2-color",
+          "caption": "South-west perspective watercolor of Downing Community"
+        },
+        {
           "name": "perspective-2",
           "caption": "South-west perspective drawing of Downing Community"
         },
@@ -42,11 +46,11 @@
         },
         {
           "name": "first-floor",
-          "caption": "First floor plan of refugee housing at Downing Community"
+          "caption": "First floor plan of refugee housing at Downing Community. Plan showing two, 2-bedroom flats for two families. Each flat approx. 120 square metres."
         },
         {
           "name": "second-floor",
-          "caption": "Second floor plan of refugee housing at Downing Community"
+          "caption": "Second floor plan of refugee housing at Downing Community. Plan showing one, 4-bedroom flat for one/two families."
         },
         {
           "name": "plant-palette",
@@ -117,7 +121,7 @@
       ]
     },
     {
-      "name": "bell-jar",
+      "name": "bell-park",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis, minima vitae, repellat tempora aut quam perspiciatis, deserunt quibusdam facere quo non distinctio minus nam consequatur sint! Consectetur, quia dicta.",
       "photos": [
         {

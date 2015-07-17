@@ -80,11 +80,15 @@ a.button {
 
 .blockquote {
   @include typl8-blockquote("—");
+  border: 1px solid $body-font-color;  
   small {
     letter-spacing: .8125px;
   }
   a {
     color: $primary-color;
+  }
+  cite {
+    padding: 0 1rem .825rem 0;
   }
 }
 
