@@ -1,3 +1,55 @@
+.form-title {
+  &.success {
+    color: $primary-color;
+    border-bottom: none;
+  }
+}
+
+%label {
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+%input {
+  font-weight: 300;
+  font-variant: normal;
+}
+
+label {
+  @extend %label;
+  font-size: 1rem;
+  &.error {
+    font-weight: 300;
+    font-variant: normal;
+    margin-bottom: .825rem;
+  }
+}
+
+input[type="submit"] {
+  @extend .button;
+  float: right;
+}
+
+input, textarea {
+  @extend %input;
+}
+
+textarea {
+  min-height: 10rem;
+}
+
+dt, dd {
+  display: inline-block;
+}
+
+dt {
+  @extend %label;
+}
+
+dd {
+  margin-left: .20125rem;
+}
+
 p + ul {
   margin-top: 0;
   margin-bottom: 1.65rem;
@@ -16,6 +68,7 @@ img {
 
 a {
   text-decoration: none;
+  color: $primary-color;
 }
 
 // Headings 
@@ -71,7 +124,7 @@ h1 {
   color: $typl8-copy-color;
 }
 
-a.button {
+.button {
   font-variant: small-caps;
   font-family: $font-family-sans-serif;
   font-size: 1rem;

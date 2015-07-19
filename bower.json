@@ -5,7 +5,8 @@
     "jquery": "~2.1.1",
     "typeplate-starter-kit": "~2.1.0",
     "foundation": "~5.5.2",
-    "jquery-zoom": "~1.7.14"
+    "jquery-zoom": "~1.7.14",
+    "jquery-validation": "~1.14.0"
   },
   "overrides": {
     "foundation": {
@@ -15,6 +16,9 @@
         "js/foundation/foundation.interchange.js",
         "js/foundation/foundation.topbar.js"
       ]
+    },
+    "jquery-validation": {
+      "main": []
     }
   }
 }
