@@ -5,7 +5,8 @@ block title
 
 block content
   //- Variables for template
-  - var project = projects[0]
+  - var projectId = 0
+  - var project = projects[projectId]
   
   +project-header(project)
 
@@ -37,6 +38,13 @@ block content
       h3 Want To See More?
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque debitis facilis nesciunt est velit vel quam numquam, error ab minima suscipit reiciendis quasi, vitae, molestias rerum maxime dolor assumenda?
       a.button(href="downing-community.zip") download project drawings
+
+  +footer-nav(
+    'see previous project',
+    projects[projectId + 1].name + '.html',
+    'view my process',
+    '/my-process.html'
+  )
 
 block page-script
   script.

@@ -5,7 +5,8 @@ block title
 
 block content
   //- Variables for template
-  - var project = projects[1]
+  - var projectId = 1
+  - var project = projects[projectId]
 
   +project-header(project)
 
@@ -26,6 +27,13 @@ block content
 
       //- Uses gulp-data to pull in photos from data/projects.json
       +list-project-photos(project.name, project.photos, false)
+
+  +footer-nav(
+    'see previous project',
+    projects[projectId - 1].name + '.html',
+    'see next project',
+    projects[projectId + 1].name + '.html'
+  )
 
 block page-script
   script.

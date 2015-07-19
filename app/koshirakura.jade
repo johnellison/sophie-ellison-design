@@ -5,7 +5,8 @@ block title
 
 block content
   //- Variables for template
-  - var project = projects[4]
+  - var projectId = 4
+  - var project = projects[projectId]
   
   +project-header(project)
 
@@ -19,3 +20,10 @@ block content
       p The A-frame timber structure serves as a shelter for both oven and people and the timber shuttering is designed to protect it from heavy annual rain and snowfall. 
 
     +list-project-photos(project.name, project.photos, false)
+
+  +footer-nav(
+    'see previous project',
+    projects[projectId - 1].name + '.html',
+    'see next project',
+    projects[projectId + 1].name + '.html'
+  )

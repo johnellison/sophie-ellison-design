@@ -5,7 +5,8 @@ block title
 
 block content
   //- Variables for template
-  - var project = projects[6]
+  - var projectId = 6
+  - var project = projects[projectId]
   
   +project-header(project)
 
@@ -15,3 +16,10 @@ block content
       p.drop-cap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, recusandae vel. Earum eius officia hic veniam corporis et aliquam maxime quasi consequuntur esse culpa mollitia tenetur placeat, unde, fuga cumque.
 
     +list-project-photos(project.name, project.photos, false)
+
+  +footer-nav(
+    'see previous project',
+    projects[projectId - 1].name + '.html',
+    'see my process',
+    'my-process.html'
+    )
