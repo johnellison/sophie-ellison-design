@@ -34,7 +34,7 @@
   }
 }
 
-.l-contact-info {
+.l-contact-info-list {
   font-family: $header-font-family;
   list-style: none;
   margin: 0;
@@ -57,7 +57,29 @@
 }
 
 .l-contact-content {
-  @include global-single-column;
+  @include global-single-column; 
+  h1 {
+    text-align: center;
+  } 
+}
+
+.l-contact-copy {
+  margin-bottom: 3.3rem;
+}
+
+.l-contact-info {
+  display: table;
+  margin: 0 auto 1.65rem auto;
+
+  img {
+    margin-bottom: .85rem;
+  }
+  @media screen and (min-width: 975px) {
+    float: right;
+    margin-left: 1.65rem;
+  }
+  @media #{$small-up} {
+  }
 }
 
 
