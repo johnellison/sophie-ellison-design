@@ -65,17 +65,11 @@
 
 // @import '01-base/debug';
 
-
 // 02-layout
-@import '02-layout/l-layout',
+@import '02-layout/l-default',
+        '02-layout/l-footer',
         '02-layout/l-index',
-        '02-layout/l-about',
-        '02-layout/l-projects',
-        '02-layout/l-what-i-do',
-        '02-layout/l-my-process',
-        '02-layout/l-inspiration',
-        '02-layout/l-contact',
-        '02-layout/l-footer';
+        '02-layout/l-projects';
 
 // 03-modules
 @import '03-modules/m-process';

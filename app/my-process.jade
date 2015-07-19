@@ -38,12 +38,10 @@ block content
                   //- need to upcase first letter and humanize
                   h3 #{capitalize(humanize(substep.name))}
                   p #{substep.description}
-              span.line(id=substep.name)
-      .row
-        .l-my-process-footer    
-          +footer-nav(
-            'read my story',
-            '/about.html',
-            'view my inspiration',
-            '/inspiration.pdf'
-            )
+              span.line(id=substep.name)   
+  +footer-nav(
+    'read my story',
+    '/my-story.html',
+    'view my inspiration',
+    '/inspiration.pdf'
+    )

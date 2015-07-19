@@ -42,3 +42,10 @@
     }
   } 
 }
+
+.l-footer-nav-wrapper {
+  @include grid-row();
+}
+.l-footer-nav-content {
+  @include global-single-column;
+}

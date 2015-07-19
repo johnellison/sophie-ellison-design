@@ -63,66 +63,8 @@
       ]
     },
     {
-      "name": "project-dehradun",
-      "description": "Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.",
-      "photos": [
-        {
-          "name": "1",
-          "caption": "Model of rooftop design by Matthew Bailey."
-        },
-        {
-          "name": "6",
-          "caption": "Drawing workshop with the children of Nanhi Dunya."
-        },
-        {
-          "name": "17",
-          "caption": "Workshop to draw plans, using the body as a measuring device."
-        },
-        {
-          "name": "18",
-          "caption": "Workshop to draw plans, using the body as a measuring device."
-        },
-        {
-          "name": "13",
-          "caption": "Mock up of our design on the rooftop of Nanhi Dunya school."
-        },
-        {
-          "name": "7",
-          "caption": "Drawing the placement of doors for the design on site."
-        },
-        {
-          "name": "8",
-          "caption": "Exploring the placement of windows for the design on site."
-        },
-        {
-          "name": "9",
-          "caption": "Group workshop on site."
-        },
-        {
-          "name": "12",
-          "caption": "Tracking the footprints of the children as they explore the mock up of the design."
-        },
-        {
-          "name": "10",
-          "caption": "Letting the children play freely in the mock up of the design to watch their movements."
-        },
-        {
-          "name": "16",
-          "caption": "Workshop to explore different building materials and their textures."
-        },
-        {
-          "name": "5",
-          "caption": "Collaborative drawing workshop with the children of Nanhi Dunya."
-        },
-        {
-          "name": "3",
-          "caption": "Workshop with the children of Nanhi Dunya."
-        }
-      ]
-    },
-    {
       "name": "bell-park",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo debitis, minima vitae, repellat tempora aut quam perspiciatis, deserunt quibusdam facere quo non distinctio minus nam consequatur sint! Consectetur, quia dicta.",
+      "description": "Bell Park was a project for my master’s of architecture, and was essentially a large seven acre university campus. The client required large student accommodation buildings, a library, cafe, community centre and transit hub. The site lies in the centre of Denver with it’s famous Cherry Creek river running right through it’s centre. The concept I worked with throughout was ‘out of the concrete desert...lies a luscious oasis’.",
       "photos": [
         {
           "name": "1",
@@ -191,6 +133,64 @@
         {
           "name": "14",
           "caption": "Diagrammatic paper model of the design for Bell Park."
+        }
+      ]
+    },
+    {
+      "name": "project-dehradun",
+      "description": "Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.",
+      "photos": [
+        {
+          "name": "1",
+          "caption": "Model of rooftop design by Matthew Bailey."
+        },
+        {
+          "name": "6",
+          "caption": "Drawing workshop with the children of Nanhi Dunya."
+        },
+        {
+          "name": "17",
+          "caption": "Workshop to draw plans, using the body as a measuring device."
+        },
+        {
+          "name": "18",
+          "caption": "Workshop to draw plans, using the body as a measuring device."
+        },
+        {
+          "name": "13",
+          "caption": "Mock up of our design on the rooftop of Nanhi Dunya school."
+        },
+        {
+          "name": "7",
+          "caption": "Drawing the placement of doors for the design on site."
+        },
+        {
+          "name": "8",
+          "caption": "Exploring the placement of windows for the design on site."
+        },
+        {
+          "name": "9",
+          "caption": "Group workshop on site."
+        },
+        {
+          "name": "12",
+          "caption": "Tracking the footprints of the children as they explore the mock up of the design."
+        },
+        {
+          "name": "10",
+          "caption": "Letting the children play freely in the mock up of the design to watch their movements."
+        },
+        {
+          "name": "16",
+          "caption": "Workshop to explore different building materials and their textures."
+        },
+        {
+          "name": "5",
+          "caption": "Collaborative drawing workshop with the children of Nanhi Dunya."
+        },
+        {
+          "name": "3",
+          "caption": "Workshop with the children of Nanhi Dunya."
         }
       ]
     },

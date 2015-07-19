@@ -22,7 +22,7 @@ gulp.src = function() {
     }));
 };
 
-gulp.task('gdata', function () {
+gulp.task('data', function () {
   return gulp.src('app/data/*.json')
     .pipe(gulp.dest('dist/data'));
 });
@@ -159,7 +159,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app/views/layouts'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'extras', 'data'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

@@ -5,17 +5,20 @@ block title
 
 block content
   //- Variables for template
-  - var project = projects[2]
+  - var project = projects[1]
 
   +project-header(project)
 
   article.l-main-content
     h1.l-project-title #{capitalize(humanize(project.name))}
     .l-project-content
-      p.drop-cap  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea libero incidunt in perferendis impedit quae, cupiditate aut natus veniam consequatur, provident laudantium qui tenetur esse aliquid voluptatem recusandae, minima!
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat fugiat omnis, aut laborum, nemo blanditiis, quam vel error, repellat hic molestias. Natus quisquam, enim perferendis excepturi corporis! Neque, quam.
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nisi cum sequi cumque. Aliquam provident, accusantium quidem suscipit laudantium doloremque neque dolores eligendi. Voluptate eum animi, rerum natus eaque commodi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate rem totam, consequuntur magni quod soluta aliquam inventore dolore quisquam itaque enim hic ipsa, error dolores est? Eaque vero, voluptatem commodi!
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet pariatur, dolorem officia sapiente quos recusandae, iste. Atque quae ullam explicabo, eius nulla porro, nam magni impedit error ipsa pariatur, ab?
+      p.drop-cap  As a master’s of architecture project, the scope of this project was far larger than anything I had done before. The client was asking for accommodation for 300 students, a community centre, library, cafe, lecture hall and transit hub, all on a 7 acre site, in the centre of Denver, Colorado.  
+      p The site, being right in the centre of Denver, was surrounded on all sides by noise, roads and large buildings. It’s beauty lay in the river that ran through it’s centre, something that sparked my idea for the following concept:
+      aside.pull-quote
+        blockquote
+          p Out of the concrete desert... lies a luscious oasis. 
+      p I figured it would be a breath of fresh air for the students after their busy days to take refuge in the quiet, green, urban oasis of Bell Park. I decided to focus my efforts on making the site as inviting, green and sheltered as I could, for where else in the city could you find peace?
+      p The project images show some larger conceptual ideas, landscape plans, elevations, sections and a sectional model that focuses in on the library’s structure. 
 
   section.l-project-photos-wrapper
     .l-project-photos-content
@@ -50,5 +53,5 @@ block page-script
       var excludedPhotos = [3, 4, 5, 6, 7, 13];
 
       // Zoom photos for Bell Park
-      project.zoomPhotos(data, 2, excludedPhotos);
+      project.zoomPhotos(data, 1, excludedPhotos);
     });

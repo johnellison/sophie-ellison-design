@@ -1,0 +1,15 @@
+extends views/layouts/default
+
+block title 
+  | My Story - Sophie Ellison Design
+
+block content
+  article.l-main-content
+    include views/includes/my-story
+   
+  +footer-nav(
+    'explore my work',
+    '/projects.html',
+    'view my process',
+    '/my-process.html'
+    )
