@@ -6,6 +6,26 @@ block title
 block content
   article.l-main-content  
     section.l-contact-content
-      h1 Contact
-      a(href="mailto:sophie@sophie-ellison.com") sophie@sophie-ellison.com
-      img(src="images/sophie-headshot.jpg", alt="", data-interchange="[images/sophie-headshot.jpg, (default)], [images/sophie-headshot@2x.jpg, (retina)]", width="250")
+      h1 Contact Me
+      .right
+        img(src="images/sophie-headshot.jpg", alt="", data-interchange="[images/sophie-headshot.jpg, (default)], [images/sophie-headshot@2x.jpg, (retina)]", width="275")
+        dl.l-contact-info
+          dt Email:
+          dd: a(href="mailto:sophie@sophie-ellison.com") sophie@sophie-ellison.com
+          br
+          dt Phone:
+          dd: a(href="tel:07523271848") 07523271848
+      br.show-for-small
+      p.drop-cap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam placeat explicabo delectus provident quo eaque ab dicta nesciunt iste expedita, perferendis earum ex fuga repudiandae quisquam, quam laborum quos natus! Dolore molestias minima veniam architecto ullam facilis similique. Harum molestias eius magni ducimus ipsam, alias nobis?
+
+      h2 send a message
+      form
+        .row
+          .small-12.columns
+            label(for="") Your Name
+              input(type="text", placeholder="Sam Smith")
+            label(for="") Your Email
+              input(type="text", placeholder="sam@email.com")
+            label(for="") Your Message
+              textarea(name="")
+            input(type="submit").button

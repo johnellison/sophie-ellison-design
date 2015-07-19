@@ -1,3 +1,13 @@
+.left {
+  margin-right: 1.65rem;
+}
+.right {
+  margin-left: 1.65rem;
+}
+form {
+  font-family: $header-font-family;
+}
+
 .top-bar {
   z-index: 99;
   box-shadow: $global-shadow;

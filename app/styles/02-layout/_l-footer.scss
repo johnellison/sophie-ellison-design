@@ -34,10 +34,12 @@
     list-style: none;
     margin: 0;
     float: right;
+    font-family: $header-font-family;
+    letter-spacing: .7px;
     li {
       margin-right: 1.65rem;
       a {
-        color: lighten($primary-color, 10%);
+        color: lighten($primary-color, 15%);
       }
     }
   } 
