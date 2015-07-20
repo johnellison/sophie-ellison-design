@@ -1,12 +1,15 @@
 footer.l-site-footer
-  ul.l-social-list
-    li: a(href="#")
-      img(src="images/facebook-square.svg", alt="facebook icon")
-    li: a(href="#")
-      img(src="images/pinterest.svg", alt="pinterest icon")
-    li: a(href="mailto:sophie@sustainablelifestyle.design")
-      img(src="images/mail.svg", alt="email icon")
-
-  ul.l-contact-list
-    li: a(href="mailto:sophie@sophie-ellison.com")
-      | sophie@sophie-ellison.com
+  .l-site-footer-column
+    ul.l-social-list
+      li: a(href="#")
+        img(src="images/facebook-square.svg", alt="facebook icon")
+      li: a(href="#")
+        img(src="images/pinterest.svg", alt="pinterest icon")
+      li: a(href="mailto:sophie@sustainablelifestyle.design")
+        img(src="images/mail.svg", alt="email icon")
+  .l-site-footer-column
+    a(href="/sitemap.html") Sitemap
+  .l-site-footer-column
+    ul.l-contact-list
+      li: a(href="mailto:sophie@sophie-ellison.com").contact
+        | sophie@sophie-ellison.com

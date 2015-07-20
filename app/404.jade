@@ -1,0 +1,13 @@
+extends views/layouts/default
+
+block title 
+  | 404 Page Not Found - Sophie Ellison Design
+
+block content
+  article.l-main-content
+    hgroup.l-not-found-header
+      h1 404
+      h4.sub-title Sorry! The page you're looking for cannot be found.
+    .l-not-found-content
+      h6 You might be able to find what you're looking for here:
+      include views/includes/sitemap

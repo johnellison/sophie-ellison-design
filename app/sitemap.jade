@@ -1,0 +1,15 @@
+extends views/layouts/default
+
+block title 
+  | Sitemap - Sophie Ellison Design
+
+block content
+  article.l-main-content
+    hgroup.l-sitemap-header
+      h1 Sitemap
+      h4.sub-title All the pages on 
+        a(href="http://sophie-ellison.com") sophie-ellison.com
+        |  can be found here:
+    .l-sitemap-content
+      h6 You might be able to find what you're looking for here:
+      include views/includes/sitemap

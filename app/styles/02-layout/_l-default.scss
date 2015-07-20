@@ -4,7 +4,10 @@
 }
 
 .l-main-wrapper {
-  padding-bottom: 3.3rem;
+  padding-bottom: 211px;
+  @media #{$medium-up} {
+    padding-bottom: 3.6rem;
+  }
 }
 
 .l-main-content {
@@ -16,7 +19,9 @@
 .l-my-story-content,
 .l-what-i-do-content,
 .l-my-process-header,
-.l-my-default-footer {
+.l-my-default-footer,
+.l-not-found-content,
+.l-sitemap-content {
   @include global-single-column;
 }
 
@@ -24,7 +29,7 @@
   text-align: center;
 }
 
-.l-what-i-do-header {
+.l-what-i-do-header, .l-not-found-header, .l-sitemap-header {
   text-align: center;
   h1 {
     margin-bottom: .825rem;
@@ -79,4 +84,7 @@
   .required {
     color: $alert-color;
   }
+}
+
+.l-sitemap-list {
 }

@@ -4,9 +4,14 @@
   width: 100%;
   display: table;
   margin-top: -2rem;
+  padding-bottom: 105px;
   @media #{$small-only} {
     @include grid-column(12);
     height: 90%;
+  }
+  @media #{$medium-up} {
+    margin-bottom: 3.6rem;
+    padding-top: 3.3rem;
   }
 }
 

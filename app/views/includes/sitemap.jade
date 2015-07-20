@@ -1,0 +1,15 @@
+ul.l-sitemap-list
+  li: a(href="index.html") Home
+  li: a(href="projects.html") Projects
+    ul
+      each project in projects
+        li
+          a(href="/" + project.name + ".html")
+            | #{capitalize(humanize(project.name))}
+
+  li: a(href="what-i-do.html") What I Do
+  li: a(href="about.html") About Me
+  li: a(href="my-story.html") My Story
+  li: a(href="my-process.html") My Process
+  li: a(href="inspiration.pdf") Inspiration (.pdf)
+  li: a(href="contact.html") Contact
