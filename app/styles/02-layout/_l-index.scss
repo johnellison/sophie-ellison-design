@@ -33,7 +33,7 @@
       @include typl8-typescale(
         map-get($typl8-scale, typl8-gamma),
         $typl8-font-base,
-        '#{$typl8-typescale-unit}',
+        #{$typl8-typescale-unit},
         $typl8-measure
         );
     }

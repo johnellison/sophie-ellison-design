@@ -87,13 +87,14 @@ h2 {
 }
 
 h1 {
-  @extend .typl8-beta;
-
+  @media #{$small-up} {
+    @extend .typl8-beta;
+  }
   @media #{$medium-up} {
     @include typl8-typescale(
       map-get($typl8-scale, typl8-alpha),
       $typl8-font-base,
-      '#{$typl8-typescale-unit}',
+      #{$typl8-typescale-unit},
       $typl8-measure
       );
   }
@@ -102,7 +103,7 @@ h1 {
     @include typl8-typescale(
       map-get($typl8-scale, typl8-mega),
       $typl8-font-base,
-      '#{$typl8-typescale-unit}',
+      #{$typl8-typescale-unit},
       $typl8-measure
       );
   }
@@ -111,7 +112,7 @@ h1 {
     @include typl8-typescale(
       map-get($typl8-scale, typl8-giga),
       $typl8-font-base,
-      '#{$typl8-typescale-unit}',
+      #{$typl8-typescale-unit},
       $typl8-measure
       );
   }

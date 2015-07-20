@@ -22,6 +22,11 @@ gulp.src = function() {
     }));
 };
 
+gulp.task('pdfs', function() {
+  return gulp.src('app/*.pdf')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('data', function () {
   return gulp.src('app/data/*.json')
     .pipe(gulp.dest('dist/data'));
@@ -159,7 +164,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app/views/layouts'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'extras', 'data'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'extras', 'data', 'pdfs'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
