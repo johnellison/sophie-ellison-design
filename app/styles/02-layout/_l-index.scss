@@ -1,16 +1,23 @@
 .l-home-header-wrapper {
+  background: url('../images/sophie-ellison-bg-small.jpg');
+  background-size: cover;
   height: 100%;
-  min-height: 450px;
+  // min-height: 450px;
   width: 100%;
   display: table;
-  margin-top: -2rem;
-  padding-bottom: 105px;
+  padding: 3.3rem 0;
+  @media #{$small-up} {
+    @media #{$portrait} {
+      background: url('../images/sophie-ellison-bg-small-portrait.jpg');
+      background-size: cover;
+      // padding-bottom: 210px;
+    }
+  }
   @media #{$small-only} {
-    @include grid-column(12);
-    height: 90%;
+    // @include grid-column(12);
+    // height: 90%;
   }
   @media #{$medium-up} {
-    margin-bottom: 4.125rem;
     padding-top: 3.3rem;
   }
 }
@@ -22,12 +29,18 @@
   margin-top: -4rem;
   hyphens: none;
   animation: fade-down 1.8s;
+  h1 {
+    color: white;
+    padding: 0;
+  }
   
   .sub-title {
+    margin-bottom: 1.65rem;
     @extend .typl8-delta;
     line-height: 1.2;
-    padding: 0 .5rem;
-    color: $typl8-copy-color;
+    // padding: 0 .5rem;
+    // color: $typl8-copy-color;
+    color: white;
 
     @media #{$medium-up} {
       @include typl8-typescale(
@@ -54,8 +67,6 @@
   .play {
     height: 100px;
     width: 200px;
-    // border-radius: 50%;
-    // border: 2px solid $typl8-heading-color;
     background-color: $primary-color;
     transition: $global-transition;
     opacity: .65;
@@ -75,4 +86,24 @@
       opacity: 1;
     }
   }
+}
+
+.reveal-modal {
+  .close-reveal-modal {
+    color: darken(#fff, 15%);
+    text-decoration: none;
+    transition: $global-transition;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.welcome-video {
+  @include flex-video-container();
+}
+
+.welcome-container {
+  @include grid-row();
 }

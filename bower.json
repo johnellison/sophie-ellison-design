@@ -1,5 +1,5 @@
 {
-  "name": "sustainable-lifestyle-design",
+  "name": "sophie-ellison-design",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
@@ -14,6 +14,7 @@
         "js/foundation/foundation.js",
         "js/foundation/foundation.dropdown.js",
         "js/foundation/foundation.interchange.js",
+        "js/foundation/foundation.reveal.js",
         "js/foundation/foundation.topbar.js"
       ]
     },

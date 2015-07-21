@@ -10,3 +10,35 @@ block content
       h4.sub-title I design sustainable homes, gardens and landscapes.
       a.play-button(href="https://vimeo.com/121852108")
         .play: span
+
+  .reveal-modal#video-modal(data-reveal aria-labelledby="modalTitle" aria-hidden="true")
+      .welcome-video.widescreen.vimeo
+        iframe(src='//player.vimeo.com/video/121852108?autoplay=0&color=43C5B0&title=0&byline=0&portrait=0' id='welcome-video' width="100%" height="100%" frameborder="0" data-progress="true" data-seek="true" data-bounce="true" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+      a(aria-label="Close").close-reveal-modal &#215;
+
+block page-script
+  script.
+    (function($) {
+      $( '.play-button' ).click( function ( e ) {
+        e.preventDefault();
+
+        $( '#video-modal' ).foundation( 'reveal', 'open' );
+        $( 'iframe' ).attr( 'src', '//player.vimeo.com/video/121852108?autoplay=1&color=43C5B0&title=0&byline=0&portrait=0' );
+        listenForEscape();
+      });
+
+      $( '.close-reveal-modal ').click( function ( e ) {
+        e.preventDefault();
+
+        $( '#video-modal' ).foundation( 'reveal', 'close' );
+        $( 'iframe').attr('src', '//player.vimeo.com/video/121852108?autoplay=0&color=43C5B0&title=0&byline=0&portrait=0');
+      });
+    }(jQuery));
+
+    function listenForEscape() {
+      $( document ).keyup( function ( e ) {
+        if ( e.keyCode == 27 ) {
+          $( 'iframe').attr('src', '//player.vimeo.com/video/121852108?autoplay=0&color=7e8b9e&title=0&byline=0&portrait=0');
+        }
+      });
+    }

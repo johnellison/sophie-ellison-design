@@ -1,11 +1,8 @@
 .l-site-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-height: 3.3rem;
-  max-height: 211px;
+  @include grid-row();
+  min-width: 100%;
   padding: 1rem 0;
-  margin-bottom: 0;
+  margin: 0;
   background: $header-font-color;
   h6 {
     color: white;
@@ -13,20 +10,33 @@
   ul.l-social-list {
     display: table;
     margin: 0 auto;
+    padding: 1rem 0 0 0;
     @media #{$medium-up} {
       float: left;
+      padding: 0;
     }
     li {
       display: inline-block;
-      margin-right: 1.65rem;
+      &:not(.last) {
+        margin-right: .825rem;
+        @media #{$large-up} {
+          margin-right: 1.65rem;
+        }
+      }
       a {
         color: white;
-        width: 1.65rem;
-        height: 1.65rem;
-        display: inline-block;
-        img {
+        width: 2.8rem;
+        height: 2.8rem;
+        @media #{$large-up} {
           width: 1.65rem;
           height: 1.65rem;
+        }
+        display: inline-block;
+        img {
+          @media #{$large-up} {
+            width: 1.65rem;
+            height: 1.65rem;
+          }
           margin: 0;
         }
       }
@@ -35,6 +45,7 @@
   ul.l-contact-list {
     list-style: none;
     margin: 0;
+    padding: 0;
     @media #{$medium-up} {
       float: right;
     }
