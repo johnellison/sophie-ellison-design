@@ -63,4 +63,7 @@ block page-script
 
       // Zoom photos for Bell Park
       project.zoomPhotos(data, 1, excludedPhotos);
+
+      //- adds span.zoom-icon for visual cue on zoomed photos
+      $('.zoom').prepend('<span class="zoom-icon"></span>');
     });
