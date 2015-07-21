@@ -89,7 +89,7 @@ block page-script
             success: function(data) {
               $form.fadeOut();
               var $success = $('.form-title');
-              $success.html('your message was sent. i will get back to you shortly.').addClass('success');
+              $success.html('message sent!').addClass('success').after('<h5 class="sub-title">I will get back to you as soon as I can.</h5>');
             },
             error: function(data) {
               alert("sorry! we've had a server error. please try again later." + data);
