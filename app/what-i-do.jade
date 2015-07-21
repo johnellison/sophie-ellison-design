@@ -1,13 +1,15 @@
 extends views/layouts/default
 
-block title 
-  | What I Do - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'What I Do | ' + site.title
+  - page.description = site.description
 
 block content
   article.l-main-content
     hgroup.l-what-i-do-header
       h1 What I Do
-      h4.sub-title I design sustainable homes, gardens and landscapes.
+      h4.sub-title= site.description
     .l-what-i-do-content
 
       img(src="images/sophie-ellison-drawing-board.jpg", alt="", data-interchange='[images/sophie-ellison-drawing-board.jpg, (default)], [images/sophie-ellison-drawing-board@2x.jpg, (retina)]')

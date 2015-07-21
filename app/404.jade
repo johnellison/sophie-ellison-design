@@ -1,7 +1,8 @@
 extends views/layouts/default
 
-block title 
-  | 404 Page Not Found - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = '404 Page Not Found | ' + site.title
 
 block content
   article.l-main-content

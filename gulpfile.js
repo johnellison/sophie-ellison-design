@@ -40,6 +40,9 @@ gulp.task('views', ['jshint'], function () {
     .pipe($.data( function(file) {
       return JSON.parse(fs.readFileSync('app/data/process.json'));
     }))
+    .pipe($.data( function(file) {
+      return JSON.parse(fs.readFileSync('app/data/site.json'));
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'));
 });
@@ -109,6 +112,7 @@ gulp.task('images', function () {
 gulp.task('extras', function () {
   return gulp.src([
     'app/*.*',
+    '!app/.jshintrc',
     '!app/*.html',
     '!app/*.jade'
   ], {

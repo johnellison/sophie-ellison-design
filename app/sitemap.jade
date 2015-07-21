@@ -1,7 +1,9 @@
 extends views/layouts/default
 
-block title 
-  | Sitemap - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'Sitemap | ' + site.title
+  - page.description = 'This the sitemap for sophie-ellison.com. You can find all the pages on my website here.'
 
 block content
   article.l-main-content

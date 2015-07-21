@@ -2,8 +2,10 @@ extends views/layouts/default
 
 include views/mixins/footer-nav
 
-block title 
-  | My Process - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'My Process | Sophie Ellison — Sustainable Home, Garden and Landscape Designer'
+  - page.description = 'My process as a sustainable home, garden and landscape designer. I start off my projects with a client interview, followed by site observation and analysis.'
 
 block content
   article.l-main-content  
@@ -26,8 +28,8 @@ block content
                       img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
                   .m-process-copy-content
                     //- need to upcase first letter and humanize
-                    h3 #{capitalize(humanize(substep.name))}
-                    p #{substep.description}
+                    h3= capitalize(humanize(substep.name))
+                    p= substep.description
                 span.line(id=substep.name)
             else 
               .m-process-step-item
@@ -36,8 +38,8 @@ block content
                     img(src="images/" + substep.name + "-icon.svg", alt="", id=substep.name)
                 .m-process-copy-content
                   //- need to upcase first letter and humanize
-                  h3 #{capitalize(humanize(substep.name))}
-                  p #{substep.description}
+                  h3= capitalize(humanize(substep.name))
+                  p= substep.description
               span.line(id=substep.name)   
   +footer-nav(
     'read my story',

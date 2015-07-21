@@ -1,7 +1,9 @@
 extends views/layouts/default
 
-block title 
-  | About - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'About Sophie Ellison | UK Home, Garden & Landscape Designer'
+  - page.description = 'My Name is Sophie Ellison and I am originally from England. I completed my Bachelors of Architecture at the Architectural Association in London...'
 
 block content
   article.l-main-content

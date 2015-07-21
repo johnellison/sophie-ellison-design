@@ -44,24 +44,26 @@
   border: 1px solid $body-font-color;
   margin-bottom: .4125rem;
   .zoom-icon {
-    position: absolute;
-    width: 3.3rem;
-    height: 3.3rem;
-    top: -1.65rem;
-    right: -1.65rem;
-    transform: rotate(45deg);
-    overflow: hidden;
-    background-color: rgba($primary-color, .65);
-    &:after {
+    @media #{$medium-up} {
       position: absolute;
-      top: 37px;
-      right: 21px;
-      content: '';
-      background-image: url("../images/zoom.svg");
-      background-repeat: no-repeat;
-      height: .825rem;
-      width: .825rem;
-      transform: rotate(-45deg);
+      width: 3.3rem;
+      height: 3.3rem;
+      top: -1.65rem;
+      right: -1.65rem;
+      transform: rotate(45deg);
+      overflow: hidden;
+      background-color: rgba($primary-color, .65);
+      &:after {
+        position: absolute;
+        top: 37px;
+        right: 21px;
+        content: '';
+        background: url('../images/zoom.png');
+        background-image: url('../images/zoom.svg'), none;
+        height: .825rem;
+        width: .825rem;
+        transform: rotate(-45deg);
+      }
     }
   }
 }

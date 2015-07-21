@@ -1,14 +1,13 @@
 extends views/layouts/project
 
-block title 
-  | Positive Dialogues - Sophie Ellison Design
-
-block content
-
-  //- variables for iteration below
+block vars
   - var projectId = 3
   - var project = projects[projectId]
+  - var page = { }
+  - page.title = capitalize(humanize(project.name)) + ' Project | ' + site.title
+  - page.description = project.description
 
+block content
   +project-header(project)
 
   article.l-main-content

@@ -1,7 +1,9 @@
 extends views/layouts/default
 
-block title 
-  | My Story - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'My Story | Sophie Ellison — Sustainable Home, Garden and Landscape Designer'
+  - page.description = 'I was on the road to finishing my Masters of Architecture when I became terribly ill. My experience in architecture showed me glimpses of incorporating sustainability and community into a design...'
 
 block content
   article.l-main-content

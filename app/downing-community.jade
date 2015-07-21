@@ -1,13 +1,14 @@
 extends views/layouts/project
 
-block title 
-  | Downing Community - Sophie Ellison Design
-
-block content
-  //- Variables for template
+block vars
   - var projectId = 0
   - var project = projects[projectId]
-  
+  - var page = { }
+  - page.title = capitalize(humanize(project.name)) + ' Project | ' + site.title
+  - page.description = project.description
+
+block content
+
   +project-header(project)
 
   article.l-main-content
@@ -57,7 +58,8 @@ block page-script
           var photo = photos[i];
 
           $('.zoom[data-zoom="' + photo.name + '"]').zoom({
-            url: 'images/' + project.name + '-' + photo.name + '@3x.jpg'
+            url: 'images/' + project.name + '-' + photo.name + '@3x.jpg',
+            touch: false
           });
 
         }

@@ -4,6 +4,8 @@ include ../mixins/footer-nav
 include ../helpers/capitalize
 include ../helpers/humanize
 
+block vars
+
 html
   body
 
@@ -11,9 +13,8 @@ html(lang='')
   head
     meta(charset='utf-8')
     meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title 
-      block title
+    meta(name='viewport', content= page.description)
+    title= page.title
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css
     // bower:css

@@ -1,7 +1,9 @@
 extends views/layouts/default
 
-block title 
-  | Projects - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'Projects | ' + site.title 
+  - page.description = 'My projects have varied from architecture, landscape design, community-driven design and natural building. I have had the pleasure of working all across the world'
 
 block content
   include views/helpers/humanize
@@ -13,7 +15,7 @@ block content
         each project in projects
           li
             a(href="/" + project.name + ".html")
-              h2 #{humanize(project.name)}
+              h2= humanize(project.name)
               img(src="images/" + project.name + "-thumb.jpg",
               alt=project.name + " project " + " thumbnail",
               data-interchange="[ images/" + project.name + "-thumb.jpg, (default)], [ images/" + project.name + "-thumb@2x.jpg, (retina)]").l-project-thumb

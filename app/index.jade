@@ -1,13 +1,15 @@
 extends views/layouts/default
 
-block title 
-  | Home - Sophie Ellison Design
+block vars
+  - var page = { }
+  - page.title = 'Home | ' + site.title
+  - page.description = site.description
 
 block content
   .l-home-header-wrapper
     header.l-home-header
-      h1 Sophie Ellison Design
-      h4.sub-title I design sustainable homes, gardens and landscapes.
+      h1= site.title
+      h4.sub-title= site.description
       a.play-button(href="https://vimeo.com/121852108")
         .play: span
 
