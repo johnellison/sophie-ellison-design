@@ -6,7 +6,7 @@
   (function($){
     $(document).foundation();
 
-    $("[data-event='contact-link']").on('click', function(){
+    $('[data-event="contact-link"]').on('click', function(){
       ga('send', {
         'hitType' : 'event',
         'eventCategory' : 'Contact',
@@ -16,7 +16,7 @@
       });
     });
 
-    $("[data-event='download-cv']").on('click', function(){
+    $('[data-event="download-cv"]').on('click', function(){
       ga('send', {
         'hitType' : 'event',
         'eventCategory' : 'Download',
@@ -26,7 +26,7 @@
       });
     });
 
-    $("[data-event='download-downing-pdf']").on('click', function(){
+    $('[data-event="download-downing-pdf"]').on('click', function(){
       ga('send', {
         'hitType' : 'event',
         'eventCategory' : 'Download',
@@ -36,7 +36,7 @@
       });
     });
 
-    $("[data-event='view-inspiration-pdf']").on('click', function(){
+    $('[data-event="view-inspiration-pdf"]').on('click', function(){
       ga('send', {
         'hitType' : 'event',
         'eventCategory' : 'Download',
