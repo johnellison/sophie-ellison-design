@@ -12,9 +12,9 @@ block content
   +project-header(project)
 
   article.l-main-content
-    h1.l-project-title Positive Dialogues
+    h1.l-project-title= capitalize(humanize(project.name))
     .l-project-content
-      p.drop-cap Positive Dialogues was a collaboration with the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices. 
+      p.drop-cap= project.description
 
       p Building a hand-made market stall out of old reclaimed floorboards, we held open design workshops every week for six months in order to engage the locals in the process of decision making and design. 
 

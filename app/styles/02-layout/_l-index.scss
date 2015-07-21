@@ -7,18 +7,33 @@
   display: table;
   padding: 3.3rem 0;
   @media #{$small-up} {
+    background: url('../images/sophie-ellison-bg-small.jpg');
+    background-size: cover;
     @media #{$portrait} {
       background: url('../images/sophie-ellison-bg-small-portrait.jpg');
       background-size: cover;
-      // padding-bottom: 210px;
     }
   }
-  @media #{$small-only} {
-    // @include grid-column(12);
-    // height: 90%;
-  }
   @media #{$medium-up} {
+    @media #{$portrait} {
+      background: url('../images/sophie-ellison-bg-medium-portrait.jpg');
+      background-size: cover;
+    }
+    background: url('../images/sophie-ellison-bg-medium.jpg');
+    background-size: cover;
     padding-top: 3.3rem;
+  }
+  @media #{$large-up} {
+    background: url('../images/sophie-ellison-bg-large.jpg');
+    background-size: cover;
+    @media #{$retina} {
+      background: url('../images/sophie-ellison-bg-large@2x.jpg');
+      background-size: cover;
+    }
+  }
+  @media #{$xlarge-up} {
+    background: url('../images/sophie-ellison-bg-xlarge.jpg');
+    background-size: cover;
   }
 }
 
@@ -49,6 +64,7 @@
         #{$typl8-typescale-unit},
         $typl8-measure
         );
+      margin-bottom: 3.3rem;
     }
   }
 }
@@ -60,10 +76,6 @@
   margin: 0 auto;
   width: 200px;
   height: 100px;
-  padding-top: 3.8rem;
-  @media #{$small-only} {
-    padding-top: 0rem;
-  }
   .play {
     height: 100px;
     width: 200px;

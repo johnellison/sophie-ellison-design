@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "downing-community",
-      "description": "Downing Community is a community of culture and hope for the Bhutanese refugees Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.",
+      "description": "Downing Community is a community of culture and hope for the Bhutanese refugees in Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.",
       "photos": [
         {
           "name": "perspective-2-color",
@@ -141,10 +141,6 @@
       "description": "Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.",
       "photos": [
         {
-          "name": "1",
-          "caption": "Model of rooftop design by Matthew Bailey."
-        },
-        {
           "name": "6",
           "caption": "Drawing workshop with the children of Nanhi Dunya."
         },
@@ -196,7 +192,7 @@
     },
     {
       "name": "positive-dialogues",
-      "description": "Positive Dialogues was a collaboration with the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices.",
+      "description": "Positive Dialogues was a collaboration with Alex Furunes and the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices.",
       "photos": [
         {
           "name": "5",
@@ -302,8 +298,12 @@
     },
     {
       "name": "manzano",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad culpa dicta, non facilis, sunt ea officiis asperiores illum maiores at facere. Earum neque totam alias laudantium, nostrum non eligendi dolores.",
+      "description": "In the mountain range of Manzano in New Mexico, I worked alongside Cadmon Whitty from Paja Construction to build the roof and straw bale walls of a 1200sf straw bale home.",
       "photos": [
+        {
+          "name": "finished",
+          "caption": "Photo of the finished bedroom for the beautiful Manzano house by Cadmon and his team."
+        },
         {
           "name": "7",
           "caption": "Completing the roof trusses for the straw bale house."

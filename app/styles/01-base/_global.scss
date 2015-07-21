@@ -1,0 +1,16 @@
+.l-callout-wrapper {
+  @include grid-row();
+}
+
+.l-callout-content {
+  @include grid-column(12);
+  @media #{$medium-up} {
+    @include grid-column($columns: 8, $center: true);
+  }
+  @media #{$large-up} {
+    @include grid-column($columns: 6, $center: true);
+  }
+  background-color: lighten($secondary-color, 5%);
+  padding: 1.65rem 1.65rem .825rem 1.65rem;
+  margin-bottom: 3.3rem;
+}

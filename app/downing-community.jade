@@ -11,10 +11,10 @@ block content
   +project-header(project)
 
   article.l-main-content
-    h1.l-project-title #{capitalize(humanize(project.name))}
+    h1.l-project-title= capitalize(humanize(project.name))
 
     .l-project-content
-      p.drop-cap There is serious affordable housing crisis in Denver. Last year alone, 70,000 refugees entered the USA&mdash;2200 of them arrived in Denver. 25% of these refugees are Bhutanese families coming from rural agrarian societies.
+      p.drop-cap= project.description
 
       p Upon arriving to America, many families are forced into marginalized areas with high crime rates. There is little to no access to good schools let alone fresh food. This crisis creates a vicious cycle of decline, poverty and isolation.
 
@@ -33,17 +33,17 @@ block content
       //- Uses gulp-data to pull in photos from data/projects.json
       +list-project-photos(project.name, project.photos, true)
 
-  .row
-    .small-12.columns.medium-8.medium-centered.large-6.panel
+  .l-callout-wrapper
+    .l-callout-content
       h3 Want To See More?
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A itaque debitis facilis nesciunt est velit vel quam numquam, error ab minima suscipit reiciendis quasi, vitae, molestias rerum maxime dolor assumenda?
-      a.button(href="downing-community.zip") download project drawings
+      p For people who want to see more details regarding the Downing Community project, I've compiled a PDF with detailed drawings, sketches, and diagrams for you to download.
+      a.button(href="/downing-community.pdf", target="_blank", title="download downing community project drawings") view downing-community.pdf
 
   +footer-nav(
     'see previous project',
-    projects[projectId + 1].name + '.html',
-    'view my process',
-    '/my-process.html'
+    projects[6].name + '.html',
+    'see next project',
+    projects[projectId + 1].name + '.html'
   )
 
 block page-script
@@ -59,10 +59,14 @@ block page-script
           $('.zoom[data-zoom="' + photo.name + '"]').zoom({
             url: 'images/' + project.name + '-' + photo.name + '@3x.jpg'
           });
+
         }
       }
     };
     $.getJSON( 'data/projects.json', function(data) {
       // Zoom photos for Downing Community
       project.zoomPhotos(data, 0);
+
+      //- adds span.zoom-icon for visual cue on zoomed photos
+      $('.zoom').prepend('<span class="zoom-icon"></span>');
     });

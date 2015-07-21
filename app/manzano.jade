@@ -11,9 +11,11 @@ block content
   +project-header(project)
 
   article.l-main-content
-    h1.l-project-title #{capitalize(project.name)}
+    h1.l-project-title= capitalize(project.name)
     .l-project-content
-      p.drop-cap Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, recusandae vel. Earum eius officia hic veniam corporis et aliquam maxime quasi consequuntur esse culpa mollitia tenetur placeat, unde, fuga cumque.
+      p.drop-cap= project.description
+      p The project included locally harvested vigas, a rainwater catchment system, solar PVs, sheep wool roof insulation, adobe plaster and adobe floors.  To view more photos and to see the process from start to finish, please see the project here: 
+        a(href="http://pajaconstruction.com/portfolio/off-grid-straw-bale-home-manzano-nm/") http://pajaconstruction.com/portfolio/off-grid-straw-bale-home-manzano-nm/
 
     +list-project-photos(project.name, project.photos, false)
 
