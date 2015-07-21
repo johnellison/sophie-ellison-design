@@ -35,7 +35,6 @@ block content
             span.required *
             textarea(name="message", id="message", required)
           input(type="submit" value="submit")
-          //- input(type="text", name="_gotcha", style="display:none")
 
 block page-script
   script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js")
@@ -90,6 +89,14 @@ block page-script
               $form.fadeOut();
               var $success = $('.form-title');
               $success.html('message sent!').addClass('success').after('<h5 class="sub-title">I will get back to you as soon as I can.</h5>');
+              
+              ga('send', {
+                'hitType' : 'event',
+                'eventCategory' : 'Contact',
+                'eventAction' : 'sent',
+                'eventLabel' : 'Contact Form',
+                'eventValue' : 250
+              });
             },
             error: function(data) {
               alert("sorry! we've had a server error. please try again later." + data);
