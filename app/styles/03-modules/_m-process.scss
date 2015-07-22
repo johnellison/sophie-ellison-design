@@ -17,7 +17,17 @@
   .m-process-step-item {
     @include grid-row();
     margin-bottom: 3.3rem;
+    .m-process-copy-content {
+      h3 {
+        @extend %typl8-breakword;
+        @include typl8-hyphens(auto);
+      }
+      p {
+        text-align: left;
+      }
+    }
     @media screen and (min-width: 712px) and (max-width: 955px) {
+
       text-align: left;
       margin-bottom: 1.65rem;
       .m-process-icon-content {
