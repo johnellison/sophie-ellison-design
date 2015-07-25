@@ -13,7 +13,7 @@ block content
         img(src="images/sophie-headshot.jpg", alt="", data-interchange="[images/sophie-headshot.jpg, (default)], [images/sophie-headshot@2x.jpg, (retina)]", width="275")
         dl.l-contact-info-list
           dt email:
-          dd: a(href="mailto:sophie@sophie-ellison.com") sophie@sophie-ellison.com
+          dd: a(href="mailto:sophie@sophieellison.design") sophie@sophieellison.design
           br
           dt phone:
           dd: a(href="tel:07523271848") 07523271848
@@ -25,7 +25,7 @@ block content
           p I look forward to meeting you.
 
       h2.form-title send a message
-      form.l-contact-form(action="http://formspree.io/sophie@sophie-ellison.com", method="post")
+      form.l-contact-form(action="http://formspree.io/sophie@sophieellison.design", method="post")
         fieldset
           label(for="name") your name
             span.required *
@@ -79,7 +79,7 @@ block page-script
           var $message = $('textarea').val();
 
           $.ajax({
-            url: "//formspree.io/sophie@sophie-ellison.com",
+            url: "//formspree.io/sophie@sophieellison.design",
             method: "POST",
             data: { 
               sender: $sender,
