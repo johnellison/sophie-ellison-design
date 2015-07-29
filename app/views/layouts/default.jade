@@ -23,6 +23,8 @@ html(lang='')
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
+    //- Use default (non-async) Typekit script because fixTextPosition
+    //- in /index.html was measuring the textWidth before font loaded.
     script(src="//use.typekit.net/jwr8snb.js")
     script.
       try{Typekit.load();}catch(e){}
