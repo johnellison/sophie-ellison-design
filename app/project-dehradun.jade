@@ -6,6 +6,8 @@ block vars
   - var page = { }
   - page.title = capitalize(humanize(project.name)) + ' Project | ' + site.title
   - page.description = project.description
+  - page.url = site.domain + 'project-dehradun.html'
+  - page.image = site.domain + 'images/project-dehradun-6.jpg'
 
 block content
   +project-header(project)

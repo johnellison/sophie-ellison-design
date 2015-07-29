@@ -9,6 +9,11 @@ html(lang='')
     meta(charset='utf-8')
     meta(name='description', content= page.description)
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- Facebook Open Graph
+    meta(property="og:url", content= page.url)
+    meta(property="og:title", content= page.title)
+    meta(property="og:description", content= page.description)
+    meta(property="og:image", content= page.image)
     title= page.title
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css

@@ -1,6 +1,9 @@
 {
   "site": {
     "title": "Sophie Ellison Design",
-    "description": "I design sustainable homes, gardens and landscapes"
+    "description": "I design sustainable homes, gardens and landscapes",
+    "domain": "https://sophieellison.design/",
+    "locale": "en_UK",
+    "localeAlternate": "en_US"
   }
 }
