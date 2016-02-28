@@ -6,15 +6,18 @@ block vars
   - page.description = 'My projects have varied from architecture, landscape design, community-driven design and natural building. I have had the pleasure of working all across the world'
   - page.url = site.domain + 'projects.html'
   - page.image = site.domain + 'images/projects-og-image.jpg'
+  - var projectIndex = projects.length
 
 block content
   include views/helpers/humanize
   article.l-main-content
     .l-projects-index-content
       h1 Projects
-
+      //- For some reason the projectIndex is off by 1...
+      - projectIndex--
       ul.l-projects-list
-        each project in projects
+        while projectIndex >= 0
+          - var project = projects[projectIndex]
           li
             a(href="/" + project.name + ".html")
               h2= humanize(project.name)
@@ -23,3 +26,4 @@ block content
               data-interchange="[ images/" + project.name + "-thumb.jpg, (default)], [ images/" + project.name + "-thumb@2x.jpg, (retina)]").l-project-thumb
             p= project.description
             a.button(href="/" + project.name + ".html") read more
+          - projectIndex--

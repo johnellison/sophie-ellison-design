@@ -1,7 +1,7 @@
 extends views/layouts/project
 
 block vars
-  - var projectId = 6
+  - var projectId = 0
   - var project = projects[projectId]
   - var page = { }
   - page.title = capitalize(humanize(project.name)) + 'Project | ' + site.title
@@ -22,9 +22,9 @@ block content
 
     +list-project-photos(project.name, project.photos, false)
 
-  +footer-nav(
-    'see previous project',
-    projects[projectId - 1].name + '.html',
-    'see my process',
-    'my-process.html'
-    )
+    +footer-nav(
+      'read my story',
+      'my-story.html',
+      'see next project',
+      projects[projectId + 1].name + '.html'
+      )

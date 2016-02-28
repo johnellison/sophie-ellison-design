@@ -1,12 +1,12 @@
 extends views/layouts/project
 
 block vars
-  - var projectId = 0
+  - var projectId = 6
   - var project = projects[projectId]
   - var page = { }
   - page.title = capitalize(humanize(project.name)) + ' Project | ' + site.title
   - page.description = project.description
-  - page.url = site.domain + 'downing-community.html'
+  - page.url = site.domain + project.name + '.html'
   - page.image = site.domain + 'images/downing-community-perspective-2-color.jpg'
 
 block content
@@ -29,25 +29,25 @@ block content
 
       p This project is the first of many that I hope to design with  a “whole integative approach”.
 
-  section.l-project-photos-wrapper
-    .l-project-photos-content
-      h2 project drawings
+    section.l-project-photos-wrapper
+      .l-project-photos-content
+        h2 project drawings
 
-      //- Uses gulp-data to pull in photos from data/projects.json
-      +list-project-photos(project.name, project.photos, true)
+        //- Uses gulp-data to pull in photos from data/projects.json
+        +list-project-photos(project.name, project.photos, true)
 
-  .l-callout-wrapper
-    .l-callout-content
-      h3 Want To See More?
-      p For people who want to see more details regarding the Downing Community project, I've compiled a PDF with detailed drawings, sketches, and diagrams for you to download.
-      a.button(href="/downing-community.pdf", title="download downing community project drawings", data-event="download-downing-pdf") view downing-community.pdf
+    .l-callout-wrapper
+      .l-callout-content
+        h3 Want To See More?
+        p For people who want to see more details regarding the Downing Community project, I've compiled a PDF with detailed drawings, sketches, and diagrams for you to download.
+        a.button(href="/downing-community.pdf", title="download downing community project drawings", data-event="download-downing-pdf") view downing-community.pdf
 
-  +footer-nav(
-    'see previous project',
-    projects[6].name + '.html',
-    'see next project',
-    projects[projectId + 1].name + '.html'
-  )
+    +footer-nav(
+      'see previous project',
+      projects[projectId - 1].name + '.html',
+      'see next project',
+      projects[projectId + 1].name + '.html'
+    )
 
 block page-script
   script.
@@ -69,8 +69,6 @@ block page-script
     };
     $.getJSON( 'data/projects.json', function(data) {
       // Zoom photos for Downing Community
-      project.zoomPhotos(data, 0);
+      project.zoomPhotos(data, 6);
 
-      //- adds span.zoom-icon for visual cue on zoomed photos
-      $('.zoom').prepend('<span class="zoom-icon"></span>');
     });

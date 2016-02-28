@@ -55,10 +55,10 @@
         color: lighten($primary-color, 15%);
       }
     }
-  } 
+  }
 }
 
-.l-site-footer-column {  
+.l-site-footer-column {
   font-family: $header-font-family;
   letter-spacing: .7px;
   text-align: center;
@@ -73,7 +73,7 @@
   }
 }
 
-// Footer Nav Mixin 
+// Footer Nav Mixin
 .l-footer-nav-wrapper {
   @include grid-row();
 }

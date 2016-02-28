@@ -1,0 +1,85 @@
+extends views/layouts/project
+
+block vars
+  - var projectId = 7
+  - var project = projects[projectId]
+  - var page = { }
+  - page.title = capitalize(humanize(project.name)) + ' Project | ' + site.title
+  - page.description = project.description
+  - page.url = site.domain + project.name + '.html'
+  - page.image = site.domain + 'images/slade-garden-marquee.jpg'
+
+block content
+
+  +project-header(project)
+
+  article.l-main-content
+    h1.l-project-title= capitalize(humanize(project.name))
+
+    .l-project-content
+      p.drop-cap= project.description
+
+      p The design thinking for the site was to create a system of guilds. A basic concept is a grouping of plants - each one having a specific role and benefit in the overall functionality of the guild. This results in a rich and diverse ecosystem that is self-supportive and low maintenance. 
+
+      p Each guild was designed to echo a forest garden layout, have a balance of colour across the seasons, attract beneficial insects & wildlife, fix nitrogen from the air, bring up nutrients from the subsoil, and create mulch.  Below is an example of a guild within the garden:
+      
+      h3 Apple Tree Guild
+      
+      ul
+        li Ceanothus and Buddleja lie on the shrub layer attracting butterflies, birds & bees, and extract nitrogen from the air enabling surrounding plants to benefit. They also generate plenty of mulch/compost. 
+        li Bitter vetch and yarrow draw up nutrients such as iron and potassium from the subsoil, storing them in their leaves so that when autumn comes and leaves fall, they build up the fertility of the soil. 
+        li Japanese maple provide seeds for birds and great nesting sites, increasing the biodiversity of the garden. 
+        li Winter daphnes and junipers provide necessary foliage and mulch throughout the winter months.
+        li A scented path of sage, lavender and hyssop attract pollinators and engage the senses. 
+        li An apple tree provides fruit, and dappled shade for picnics and shade-loving plants.
+        li Larger shrubs are placed to the south-west of smaller, more delicate plants in order to protect them from the strong south-westerly winds. 
+        li Perennial vegetables (chives, elephant garlic, turkish rocket & apple mint) are scattered throughout providing low maintenance edibles that prevent soil erosion (in comparison to annuals). They also serve as attractive ornamentals.   
+        li A ground cover of creeping thyme protects the soil from water compaction, top soil runoff and invasion of weeds. 
+        li Daffodils suppress grasses, reducing the root and nutrient competition within the guild. They also contain toxins that detract pests from eating the bark of the apple tree. 
+
+      h3 Collaborative Design
+      p Collaborative design was also a key element in this design process, specifically in the conceptual design phase. It enabled the clients to feel attached to the design from day one and contribute their wealth of knowledge to the project. 
+
+    section.l-project-photos-wrapper
+      .l-project-photos-content
+        h2 project drawings
+
+        //- Uses gulp-data to pull in photos from data/projects.json
+        +list-project-photos(project.name, project.photos, true)
+
+    //- .l-callout-wrapper
+    //-   .l-callout-content
+    //-     h3 Want To See More?
+    //-     p For people who want to see more details regarding the Downing Community project, I've compiled a PDF with detailed drawings, sketches, and diagrams for you to download.
+    //-     a.button(href="/downing-community.pdf", title="download downing community project drawings", data-event="download-downing-pdf") view downing-community.pdf
+
+    +footer-nav(
+      'see previous project',
+      projects[projectId - 1].name + '.html',
+      'see my process',
+      'my-process.html'
+    )
+
+block page-script
+  script.
+    var project = {
+      zoomPhotos: function(data, projectId) {
+        var project = data.projects[projectId];
+        var photos = project.photos;
+
+        for (var i = 0; i < photos.length; i++) {
+          var photo = photos[i];
+
+          $('.zoom[data-zoom="' + photo.name + '"]').zoom({
+            url: 'images/' + project.name + '-' + photo.name + '@3x.jpg',
+            touch: false
+          });
+          
+        }
+      }
+    };
+    $.getJSON( 'data/projects.json', function(data) {
+
+      project.zoomPhotos(data, 7);
+    });
+    

@@ -114,7 +114,7 @@ gulp.task('extras', function () {
     'app/*.*',
     '!app/.jshintrc',
     '!app/*.html',
-    '!app/*.jade'
+    '!app/**/*.jade'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -144,7 +144,7 @@ gulp.task('serve', ['styles', 'views'], function () {
     'gulpfile.js'
   ]).on('change', reload);
 
-  gulp.watch('app/data/*.json', ['views']); 
+  gulp.watch('app/data/*.json', ['views']);
   gulp.watch('app/styles/**/*.scss', ['styles']);
   // gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep']);

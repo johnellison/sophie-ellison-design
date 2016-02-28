@@ -1,64 +1,196 @@
 {
   "projects": [
     {
-      "name": "downing-community",
-      "description": "Downing Community is a community of culture and hope for the Bhutanese refugees in Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.",
+      "name": "manzano",
+      "description": "In the mountain range of Manzano in New Mexico, I worked alongside Cadmon Whitty from Paja Construction to build the roof and straw bale walls of a 1200sf straw bale home.",
       "photos": [
         {
-          "name": "perspective-2-color",
-          "caption": "South-west perspective watercolor of Downing Community"
+          "name": "finished",
+          "caption": "Photo of the finished bedroom for the beautiful Manzano house by Cadmon and his team."
         },
         {
-          "name": "perspective-2",
-          "caption": "South-west perspective drawing of Downing Community"
+          "name": "7",
+          "caption": "Completing the roof trusses for the straw bale house."
         },
         {
-          "name": "design",
-          "caption": "Conceptual design of Downing Community"
+          "name": "1",
+          "caption": "Building the straw bale walls."
         },
         {
-          "name": "detailed",
-          "caption": "Detailed construction drawing of Downing Community"
+          "name": "4",
+          "caption": "Putting the bales in place in the wall"
         },
         {
-          "name": "perspective",
-          "caption": "South-facing perspective drawing of Downing Community"
+          "name": "6",
+          "caption": "Exposed straw bale walls ready for plastering"
         },
         {
-          "name": "keynote",
-          "caption": "Keynote descriptions of design elements at Downing Community"
+          "name": "5",
+          "caption": "Strapping and tightening the straw bale walls, getting ready for plastering."
         },
         {
-          "name": "analysis-1",
-          "caption": "Contour, Soil & Water Flow Analysis of the site at Downing Community"
+          "name": "3",
+          "caption": "Getting covered in straw in the building process!"
+        }
+      ]
+    },
+    {
+      "name": "negev",
+      "description": "In the middle of the Negev desert in Israel, I volunteered in the process of building a family of four’s straw-bale house, designed by Nava Beja, Ecoarc. The regulation is Israel is such that a concrete bomb shelter must be constructed on the basement level, so only the upper level was straw bale. I was mainly involved in the clay and lime plastering of the house yet learnt about the entire structure simply by working within the exposed structure.",
+      "photos": [
+        {
+          "name": "1",
+          "caption": "North-western side of the house, with it’s first layer of lime and clay plaster."
         },
         {
-          "name": "analysis-2",
-          "caption": "Site, Sector & Climate Analysis of the site at Downing Community"
+          "name": "2",
+          "caption": "Interior storage bench with first layer of plaster on the walls."
         },
         {
-          "name": "context",
-          "caption": "Collage showing the life, culture & history of the refugees"
+          "name": "3",
+          "caption": "Bedroom with two layers of lime and clay plaster."
         },
         {
-          "name": "concept",
-          "caption": "Conceptual diagram for Downing Community"
+          "name": "6",
+          "caption": "Plastering the initial clay and straw layer to the walls."
         },
         {
-          "name": "first-floor",
-          "caption": "First floor plan of refugee housing at Downing Community. Plan showing two, 2-bedroom flats for two families. Each flat approx. 120 square metres."
+          "name": "5",
+          "caption": "South-western view of the house."
+        }
+      ]
+    },
+    {
+      "name": "koshirakura",
+      "description": "Building on the belief that “food brings people together”, a number of students including myself joined architect, Shin Egashira to work with a local, rural community in Koshirakura, Japan to build a wood-fired oven and A-frame timber shelter. This would provide a space for the community to gather, socialise, cook, eat and take time away from their work - mainly agricultural.",
+      "photos": [
+        {
+          "name": "3",
+          "caption": "Community clay pizza oven for the residents of Koshirakura, Japan."
         },
         {
-          "name": "second-floor",
-          "caption": "Second floor plan of refugee housing at Downing Community. Plan showing one, 4-bedroom flat for one/two families."
+          "name": "1",
+          "caption": "Community clay pizza oven with shading and seating areas."
         },
         {
-          "name": "plant-palette",
-          "caption": "Tree, shrub and flower palette for Downing Community"
+          "name": "2",
+          "caption": "Closing up the oven to protect it during the winter months."
         },
         {
-          "name": "budget",
-          "caption": "Budget for the landscape design and build at Downing Community"
+          "name": "5",
+          "caption": "Building the final layers of the clay oven, using fire bricks and a clay mortar mix."
+        },
+        {
+          "name": "6",
+          "caption": "Giving a workshop in clay building to the local children."
+        },
+        {
+          "name": "7",
+          "caption": "Deconstructing a previous project to examine it’s structure."
+        },
+        {
+          "name": "4",
+          "caption": "The final night before completion of the oven!"
+        }
+      ]
+    },
+    {
+      "name": "positive-dialogues",
+      "description": "Positive Dialogues was a collaboration with Alex Furunes and the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices.",
+      "photos": [
+        {
+          "name": "5",
+          "caption": "Collaborative drawing workshop for the new design of Berwick Street Market."
+        },
+        {
+          "name": "1",
+          "caption": "Opening up the conversation to local residents for the new design of Berwick Street market."
+        },
+        {
+          "name": "drawing",
+          "caption": "Three different arrangements for our handmade market stall at Berwick Street market."
+        },
+        {
+          "name": "7",
+          "caption": "Collaborative drawing workshop for the new design of Berwick Street Market. "
+        },
+        {
+          "name": "11",
+          "caption": "Collaborative street drawing for Berwick Street Market’s new design."
+        },
+        {
+          "name": "12",
+          "caption": "Painting of Berwick Street’s “heart” done by local residents, business owners and passers by."
+        },
+        {
+          "name": "9",
+          "caption": "Model workshop inside our handmade market stall."
+        },
+        {
+          "name": "3",
+          "caption": "Model workshop for local business owners of Berwick Street."
+        },
+        {
+          "name": "4",
+          "caption": "Exploring the idea of shadow storytelling."
+        },
+        {
+          "name": "10",
+          "caption": "Handmade market stall in exhibition at the Architectural Association."
+        }
+      ]
+    },
+    {
+      "name": "project-dehradun",
+      "description": "Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.",
+      "photos": [
+        {
+          "name": "6",
+          "caption": "Drawing workshop with the children of Nanhi Dunya."
+        },
+        {
+          "name": "17",
+          "caption": "Workshop to draw plans, using the body as a measuring device."
+        },
+        {
+          "name": "18",
+          "caption": "Workshop to draw plans, using the body as a measuring device."
+        },
+        {
+          "name": "13",
+          "caption": "Mock up of our design on the rooftop of Nanhi Dunya school."
+        },
+        {
+          "name": "7",
+          "caption": "Drawing the placement of doors for the design on site."
+        },
+        {
+          "name": "8",
+          "caption": "Exploring the placement of windows for the design on site."
+        },
+        {
+          "name": "9",
+          "caption": "Group workshop on site."
+        },
+        {
+          "name": "12",
+          "caption": "Tracking the footprints of the children as they explore the mock up of the design."
+        },
+        {
+          "name": "10",
+          "caption": "Letting the children play freely in the mock up of the design to watch their movements."
+        },
+        {
+          "name": "16",
+          "caption": "Workshop to explore different building materials and their textures."
+        },
+        {
+          "name": "5",
+          "caption": "Collaborative drawing workshop with the children of Nanhi Dunya."
+        },
+        {
+          "name": "3",
+          "caption": "Workshop with the children of Nanhi Dunya."
         }
       ]
     },
@@ -137,196 +269,147 @@
       ]
     },
     {
-      "name": "project-dehradun",
-      "description": "Working together with the community of Nanhi Dunya, we held workshops with the children of the school to design new classrooms on the rooftop of the existing school. Our aim throughout was to build up on local knowledge, hold participatory design workshops and utilise local building techniques.",
+      "name": "downing-community",
+      "description": "Downing Community is a community of culture and hope for the Bhutanese refugees in Denver. The project will give three families a chance to live an affordable, self-sustainable life, with access to great schools. This multi-family community model could open the door for many communities to follow.",
       "photos": [
         {
-          "name": "6",
-          "caption": "Drawing workshop with the children of Nanhi Dunya."
+          "name": "perspective-2-color",
+          "caption": "South-west perspective watercolor of Downing Community"
         },
         {
-          "name": "17",
-          "caption": "Workshop to draw plans, using the body as a measuring device."
+          "name": "perspective-2",
+          "caption": "South-west perspective drawing of Downing Community"
         },
         {
-          "name": "18",
-          "caption": "Workshop to draw plans, using the body as a measuring device."
+          "name": "design",
+          "caption": "Conceptual design of Downing Community"
         },
         {
-          "name": "13",
-          "caption": "Mock up of our design on the rooftop of Nanhi Dunya school."
+          "name": "detailed",
+          "caption": "Detailed construction drawing of Downing Community"
         },
         {
-          "name": "7",
-          "caption": "Drawing the placement of doors for the design on site."
+          "name": "perspective",
+          "caption": "South-facing perspective drawing of Downing Community"
         },
         {
-          "name": "8",
-          "caption": "Exploring the placement of windows for the design on site."
+          "name": "keynote",
+          "caption": "Keynote descriptions of design elements at Downing Community"
         },
         {
-          "name": "9",
-          "caption": "Group workshop on site."
+          "name": "analysis-1",
+          "caption": "Contour, Soil & Water Flow Analysis of the site at Downing Community"
         },
         {
-          "name": "12",
-          "caption": "Tracking the footprints of the children as they explore the mock up of the design."
+          "name": "analysis-2",
+          "caption": "Site, Sector & Climate Analysis of the site at Downing Community"
         },
         {
-          "name": "10",
-          "caption": "Letting the children play freely in the mock up of the design to watch their movements."
+          "name": "context",
+          "caption": "Collage showing the life, culture & history of the refugees"
         },
         {
-          "name": "16",
-          "caption": "Workshop to explore different building materials and their textures."
+          "name": "concept",
+          "caption": "Conceptual diagram for Downing Community"
         },
         {
-          "name": "5",
-          "caption": "Collaborative drawing workshop with the children of Nanhi Dunya."
+          "name": "first-floor",
+          "caption": "First floor plan of refugee housing at Downing Community. Plan showing two, 2-bedroom flats for two families. Each flat approx. 120 square metres."
         },
         {
-          "name": "3",
-          "caption": "Workshop with the children of Nanhi Dunya."
+          "name": "second-floor",
+          "caption": "Second floor plan of refugee housing at Downing Community. Plan showing one, 4-bedroom flat for one/two families."
+        },
+        {
+          "name": "plant-palette",
+          "caption": "Tree, shrub and flower palette for Downing Community"
+        },
+        {
+          "name": "budget",
+          "caption": "Budget for the landscape design and build at Downing Community"
         }
       ]
     },
     {
-      "name": "positive-dialogues",
-      "description": "Positive Dialogues was a collaboration with Alex Furunes and the community of Soho in London to re-think the large-scale redevelopment of Berwick street market. Westminster Council had previously attempted to redevelop the street in 2006, but lost £600,000 in the process due to the complete disregard of any local voices.",
+      "name": "slade-garden",
+      "description": "The brief for this project was to 'design a biodiverse garden that cultivates vibrant social spaces and produces abundant organic food.' The clients are keen gardeners and were passionate about transforming their sparse orthogonal site into a lush edible landscape. The final design that we collaboratively arrived at brings together flourishing permaculture guilds, diverse social spaces and an abundance of fruit and vegetables.",
       "photos": [
         {
-          "name": "5",
-          "caption": "Collaborative drawing workshop for the new design of Berwick Street Market."
+          "name": "detailed-plan",
+          "caption": "Final detailed plan of design"
         },
         {
-          "name": "1",
-          "caption": "Opening up the conversation to local residents for the new design of Berwick Street market."
+          "name": "conceptual-diagram",
+          "caption": "Conceptual diagram of design layout and guilds"
         },
         {
-          "name": "drawing",
-          "caption": "Three different arrangements for our handmade market stall at Berwick Street market."
+          "name": "season-colours",
+          "caption": "Seasonal colour diagrams for the design"
         },
         {
-          "name": "7",
-          "caption": "Collaborative drawing workshop for the new design of Berwick Street Market. "
+          "name": "conceptual-sketches",
+          "caption": "Selection of conceptual sketches for design"
         },
         {
-          "name": "11",
-          "caption": "Collaborative street drawing for Berwick Street Market’s new design."
+          "name": "apple-tree-guild",
+          "caption": "Plant palette for the apple tree guild"
         },
         {
-          "name": "12",
-          "caption": "Painting of Berwick Street’s “heart” done by local residents, business owners and passers by."
+          "name": "morello-cherry-guild",
+          "caption": "Plant palette for the morello cherry guild"
         },
         {
-          "name": "9",
-          "caption": "Model workshop inside our handmade market stall."
+          "name": "water-guild",
+          "caption": "Plant palette for the water guild"
         },
         {
-          "name": "3",
-          "caption": "Model workshop for local business owners of Berwick Street."
+          "name": "tuber-guild",
+          "caption": "Plant palette for the tuber guild"
+        },
+
+        {
+          "name": "american-persimmon-guild",
+          "caption": "Plant palette for American Persimmon guild"
         },
         {
-          "name": "4",
-          "caption": "Exploring the idea of shadow storytelling."
+          "name": "climate-analysis",
+          "caption": "Sun path and shadow data for the site"
         },
         {
-          "name": "10",
-          "caption": "Handmade market stall in exhibition at the Architectural Association."
-        }
-      ]
-    },
-    {
-      "name": "koshirakura",
-      "description": "Building on the belief that “food brings people together”, a number of students including myself joined architect, Shin Egashira to work with a local, rural community in Koshirakura, Japan to build a wood-fired oven and A-frame timber shelter. This would provide a space for the community to gather, socialise, cook, eat and take time away from their work - mainly agricultural.",
-      "photos": [
-        {
-          "name": "3",
-          "caption": "Community clay pizza oven for the residents of Koshirakura, Japan."
+          "name": "wind-analysis",
+          "caption": "Wind rose data for the site"
         },
         {
-          "name": "1",
-          "caption": "Community clay pizza oven with shading and seating areas."
+          "name": "apple-tree-guild-guide",
+          "caption": "Seasonal and property table for apple tree guild"
         },
         {
-          "name": "2",
-          "caption": "Closing up the oven to protect it during the winter months."
+          "name": "morello-cherry-guild-guide",
+          "caption": "Seasonal and property table for morello cherry guild"
         },
         {
-          "name": "5",
-          "caption": "Building the final layers of the clay oven, using fire bricks and a clay mortar mix."
+          "name": "client-drawing",
+          "caption": "The client’s drawing for the conceptual phase of the design"
         },
         {
-          "name": "6",
-          "caption": "Giving a workshop in clay building to the local children."
+          "name": "flora-info",
+          "caption": "Full data on each plant within the design"
         },
         {
-          "name": "7",
-          "caption": "Deconstructing a previous project to examine it’s structure."
+          "name": "photo-before",
+          "caption": "Photo of existing site"
         },
         {
-          "name": "4",
-          "caption": "The final night before completion of the oven!"
-        }
-      ]
-    },
-    {
-      "name": "negev",
-      "description": "In the middle of the Negev desert in Israel, I volunteered in the process of building a family of four’s straw-bale house, designed by Nava Beja, Ecoarc. The regulation is Israel is such that a concrete bomb shelter must be constructed on the basement level, so only the upper level was straw bale. I was mainly involved in the clay and lime plastering of the house yet learnt about the entire structure simply by working within the exposed structure.",
-      "photos": [
-        {
-          "name": "1",
-          "caption": "North-western side of the house, with it’s first layer of lime and clay plaster."
+          "name": "edging-ideas",
+          "caption": "Affordable edging ideas for the plant beds"
         },
         {
-          "name": "2",
-          "caption": "Interior storage bench with first layer of plaster on the walls."
+          "name": "budget",
+          "caption": "Budget for design and plants (implementation was done by the clients themselves)"
         },
         {
-          "name": "3",
-          "caption": "Bedroom with two layers of lime and clay plaster."
-        },
-        {
-          "name": "6",
-          "caption": "Plastering the initial clay and straw layer to the walls."
-        },
-        {
-          "name": "5",
-          "caption": "South-western view of the house."
-        }
-      ]
-    },
-    {
-      "name": "manzano",
-      "description": "In the mountain range of Manzano in New Mexico, I worked alongside Cadmon Whitty from Paja Construction to build the roof and straw bale walls of a 1200sf straw bale home.",
-      "photos": [
-        {
-          "name": "finished",
-          "caption": "Photo of the finished bedroom for the beautiful Manzano house by Cadmon and his team."
-        },
-        {
-          "name": "7",
-          "caption": "Completing the roof trusses for the straw bale house."
-        },
-        {
-          "name": "1",
-          "caption": "Building the straw bale walls."
-        },
-        {
-          "name": "4",
-          "caption": "Putting the bales in place in the wall"
-        },
-        {
-          "name": "6",
-          "caption": "Exposed straw bale walls ready for plastering"
-        },
-        {
-          "name": "5",
-          "caption": "Strapping and tightening the straw bale walls, getting ready for plastering."
-        },
-        {
-          "name": "3",
-          "caption": "Getting covered in straw in the building process!"
+          "name": "laying-cardboard",
+          "caption": "Laying cardboard on the beds to kill the grass and provide a decomposable mulch layer."
         }
       ]
     }
