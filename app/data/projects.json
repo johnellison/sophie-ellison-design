@@ -410,6 +410,10 @@
         {
           "name": "laying-cardboard",
           "caption": "Laying cardboard on the beds to kill the grass and provide a decomposable mulch layer."
+        },
+        {
+          "name": "laying-bricks",
+          "caption": "Next phase of implementation: laying brick borders, digging out pond and building raised annual beds."
         }
       ]
     }
