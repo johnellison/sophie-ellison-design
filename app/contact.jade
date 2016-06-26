@@ -27,7 +27,7 @@ block content
           p I look forward to meeting you.
 
       h2.form-title send a message
-      form.l-contact-form(action="https://formspree.io/sophie@sophieellison.design", method="post")
+      form.l-contact-form(action="http://formspree.io/sophie@sophieellison.design", method="post")
         fieldset
           label(for="name") your name
             span.required *
@@ -41,7 +41,7 @@ block content
           input(type="submit" value="submit")
 
 block page-script
-  script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js")
+  script(src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js")
   script.
     (function($){
       var $form = $('.l-contact-form');
@@ -81,7 +81,7 @@ block page-script
           var $message = $('textarea').val();
 
           $.ajax({
-            url: "https://formspree.io/sophie@sophieellison.design",
+            url: "http://formspree.io/sophie@sophieellison.design",
             method: "POST",
             data: { 
               sender: $sender,
@@ -110,4 +110,3 @@ block page-script
       });
     }(jQuery));
    
-
